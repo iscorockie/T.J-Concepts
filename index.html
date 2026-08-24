@@ -4,24 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>T.J CONCEPTS | Pure Gold Trading, High-Yield Refining &amp; Mining Solutions</title>
-  <meta name="description" content="T.J Concepts - Premier Gold Solutions: Buy &amp; Sell Gold Bullion, 999.9 Certified Gold Refining, and Responsible Mining Operations. Reach out on WhatsApp 0755848198.">
+  <meta name="description" content="T.J Concepts - Premier Gold Solutions: Buy &amp; Sell Gold Bullion, 999.9 Certified Gold Refining, and Responsible Mining Operations. Reach out on WhatsApp +256 755 848 198.">
   <style>
     /* ==========================================================================
-       T.J CONCEPTS - LUXURY GOLD THEME WITH GLASSMORPHISM & NEXA NUMBERS
+       T.J CONCEPTS - LUXURY GOLD THEME WITH GLASSMORPHISM & ELEGANT TYPOGRAPHY
        ========================================================================== */
-    @font-face {
-      font-family: 'Nexa';
-      src: local('Nexa Bold'), local('Nexa-Bold'), local('Nexa'), local('Nexa Heavy'), local('NexaRegular');
-      font-weight: 700;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Nexa';
-      src: local('Nexa Regular'), local('Nexa-Regular'), local('Nexa Book');
-      font-weight: 400;
-      font-style: normal;
-    }
-
     :root {
       --bg-deep: #07080a;
       --bg-surface: #0e1017;
@@ -62,9 +49,8 @@
       --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.85);
       --shadow-gold: 0 8px 30px rgba(212, 175, 55, 0.35);
 
-      --font-serif: "Cinzel", "Playfair Display", "Georgia", serif;
-      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-nexa: "Nexa", "Nexa Bold", "Nexa Heavy", "Montserrat", "Century Gothic", -apple-system, sans-serif;
+      --font-serif: "Cinzel", "Playfair Display", "Georgia", "Times New Roman", serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     * {
@@ -108,24 +94,11 @@
       background: var(--gold-600);
     }
 
-    /* Typography & Nexa Numbers */
+    /* Typography & Hierarchy */
     h1, h2, h3, h4, .serif-font {
       font-family: var(--font-serif);
       font-weight: 700;
       letter-spacing: 0.03em;
-    }
-
-    /* ALL NUMBERS, PRICES, METRICS, WEIGHTS, KARATS USE NEXA FONT */
-    .nexa-font, .nexa-num,
-    .stat-item h3, .grand-total-val, .purity-karat, .purity-pct, 
-    .step-number, .p-price, .rates-table td strong, #spot-price-display, 
-    #gram-24k-display, #wa-number-badge, .badge-pill, .v-feat-val, 
-    .ticker-wrapper strong, .bar-serial, .bar-purity, .live-val-num,
-    .phone-number-display, .price-display, .stat-val, .table-num,
-    .wa-pill, .order-badge-num {
-      font-family: var(--font-nexa) !important;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: 0.02em;
     }
 
     .gold-text {
@@ -158,7 +131,7 @@
       padding: 0 24px;
     }
 
-    /* ================= GLASSMORPHISM TILES & UTILITIES ================= */
+    /* ================= GLASSMORPHISM TILES ================= */
     .glass-tile, .glass-card {
       background: rgba(18, 22, 32, 0.62) !important;
       backdrop-filter: blur(20px) saturate(190%) !important;
@@ -173,7 +146,7 @@
       transform: translateY(-6px);
     }
 
-    /* ================= CTA BUTTONS WITH DYNAMIC GOLD FILL ON MOUSE HOVER ================= */
+    /* ================= CTA BUTTONS WITH GOLD FILL ON MOUSE HOVER ================= */
     .btn, .cta-btn, .btn-gold, .btn-outline-gold, .btn-wa, .trade-btn-sm, .order-tab, .filter-btn, .wa-send-btn, button[type="submit"] {
       display: inline-flex;
       align-items: center;
@@ -217,7 +190,7 @@
       backdrop-filter: blur(8px);
     }
 
-    /* --- MOUSE HOVER / MOVE: GAINS BRILLIANT SOLID GOLD FILL --- */
+    /* --- MOUSE HOVER: GAINS BRILLIANT SOLID GOLD FILL --- */
     .btn:hover, .cta-btn:hover, .btn-gold:hover, .btn-outline-gold:hover, .btn-wa:hover, .trade-btn-sm:hover, .order-tab.active, .filter-btn.active, .filter-btn:hover, button[type="submit"]:hover {
       background: linear-gradient(135deg, #FFF2A3 0%, #E2B947 25%, #AA7A1E 50%, #F6DD7F 75%, #FFE68F 100%) !important;
       color: #0a0b10 !important;
@@ -227,7 +200,6 @@
       font-weight: 700 !important;
     }
 
-    /* Ensure icons inside CTA buttons turn dark upon gold fill */
     .btn:hover svg, .cta-btn:hover svg, .btn-gold:hover svg, .btn-outline-gold:hover svg, .btn-wa:hover svg, .trade-btn-sm:hover svg, button[type="submit"]:hover svg {
       color: #0a0b10 !important;
       fill: #0a0b10 !important;
@@ -292,11 +264,12 @@
       font-weight: 700;
       background: linear-gradient(135deg, #25D366 0%, #17a04c 100%);
       border: 1px solid #75f1a5;
-      padding: 4px 12px;
+      padding: 4px 14px;
       border-radius: var(--radius-full);
       cursor: pointer;
       transition: all 0.25s ease;
       box-shadow: 0 2px 10px rgba(37, 211, 102, 0.3);
+      font-size: 12px;
     }
     .wa-pill:hover {
       background: linear-gradient(135deg, #FFF2A3 0%, #E2B947 50%, #FFE68F 100%) !important;
@@ -630,7 +603,7 @@
       font-size: 16px;
     }
 
-    /* ================= CORE SERVICES SECTION WITH EMBEDDED IMAGES ================= */
+    /* ================= CORE SERVICES WITH EMBEDDED IMAGES & GLASSMORPHISM ================= */
     .services-section {
       padding: 90px 0;
       position: relative;
@@ -841,6 +814,7 @@
       color: #fff;
     }
     .grand-total-val {
+      font-family: var(--font-serif);
       font-size: 28px;
       color: var(--gold-300);
     }
@@ -912,7 +886,7 @@
       transition: all 0.25s;
     }
 
-    /* ================= COMPREHENSIVE ORDER BUILDER ================= */
+    /* ================= TABBED WHATSAPP ORDER BUILDER ================= */
     .order-builder-section {
       padding: 90px 0;
       position: relative;
@@ -1100,6 +1074,7 @@
       transition: 0.3s;
     }
     .purity-karat {
+      font-family: var(--font-serif);
       font-size: 34px;
       color: var(--gold-300);
       margin-bottom: 4px;
@@ -1704,12 +1679,12 @@
       </div>
 
       <div class="top-bar-right">
-        <!-- WHATSAPP NUMBER: 0755848198 -->
+        <!-- WHATSAPP NUMBER WITH COUNTRY CODE: +256 755 848 198 -->
         <a href="https://wa.me/256755848198?text=Hello%20TJ%20Concepts%2C%20I%20would%20like%20to%20inquire%20about%20Gold%20Orders%20and%20Refining." target="_blank" class="wa-pill" title="Chat on WhatsApp">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
-          <span id="wa-number-badge">0755 848 198</span>
+          <span id="wa-number-badge">+256 755 848 198</span>
         </a>
         <button class="settings-btn" onclick="openSettingsModal()" title="Customize Business WhatsApp Number">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1762,11 +1737,11 @@
         <button onclick="scrollToOrderSection('buy')" class="btn btn-gold">
           <span>Trade Gold</span>
         </button>
-        <button onclick="openWhatsAppDirect('Order and Trade Inquiry on 0755848198')" class="btn btn-wa">
+        <button onclick="openWhatsAppDirect('Order and Trade Inquiry on +256 755 848 198')" class="btn btn-wa">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
-          <span>WhatsApp 0755848198</span>
+          <span>WhatsApp +256 755 848 198</span>
         </button>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1794,7 +1769,7 @@
           The Standard in Pure <span class="gold-text-glow">Gold Trading</span>, Precision <span class="gold-text">Refining</span> &amp; Mining.
         </h1>
         <p class="hero-desc">
-          T.J Concepts delivers institutional-grade precious metals solutions. We buy and sell investment bullion, provide 99.99% high-yield induction refining, and partner directly with ethical mining concessions. Orders and reachout directly on WhatsApp: <strong style="color:var(--gold-300);">0755848198</strong>.
+          T.J Concepts delivers institutional-grade precious metals solutions. We buy and sell investment bullion, provide 99.99% high-yield induction refining, and partner directly with ethical mining concessions. Orders and reachout directly on WhatsApp: <strong style="color:var(--gold-300);">+256 755 848 198</strong>.
         </p>
 
         <div class="hero-actions">
@@ -1823,7 +1798,7 @@
             <p>Lab-Grade Assaying</p>
           </div>
           <div class="stat-item glass-tile">
-            <h3>0755848198</h3>
+            <h3>+256 755 848 198</h3>
             <p>Direct WhatsApp Reachout</p>
           </div>
         </div>
@@ -1863,7 +1838,7 @@
                 </svg>
                 Direct WhatsApp Desk
               </span>
-              <span class="v-feat-val" style="color:var(--whatsapp-green);">0755 848 198 (Active)</span>
+              <span class="v-feat-val" style="color:var(--whatsapp-green);">+256 755 848 198 (Active)</span>
             </div>
           </div>
         </div>
@@ -2001,13 +1976,13 @@
     </div>
   </section>
 
-  <!-- ================= LIVE GOLD CALCULATOR WITH NEXA METRICS ================= -->
+  <!-- ================= LIVE GOLD CALCULATOR & RATES ================= -->
   <section class="calc-section" id="calculator">
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">Instant Gold Valuation</span>
         <h2 class="section-title">Live Gold Price <span class="gold-text">Calculator</span></h2>
-        <p class="section-desc">Estimate the exact purchase or buyback value for any quantity of gold based on current spot rates. Click to lock in your order directly on WhatsApp 0755848198.</p>
+        <p class="section-desc">Estimate the exact purchase or buyback value for any quantity of gold based on current spot rates. Click to lock in your order directly on WhatsApp +256 755 848 198.</p>
       </div>
 
       <div class="calc-card-grid glass-tile">
@@ -2041,7 +2016,7 @@
           <div class="input-row form-group">
             <div style="flex: 1.5;">
               <label class="form-label">Weight Quantity</label>
-              <input type="number" id="calc-weight" class="custom-input nexa-num" value="50" min="0.1" step="0.1" oninput="recalculateGold()" placeholder="e.g. 50">
+              <input type="number" id="calc-weight" class="custom-input" value="50" min="0.1" step="0.1" oninput="recalculateGold()" placeholder="e.g. 50">
             </div>
             <div style="flex: 1;">
               <label class="form-label">Unit</label>
@@ -2077,15 +2052,15 @@
               </div>
               <div class="breakdown-row">
                 <span class="text-muted">Total Net Weight:</span>
-                <span id="breakdown-weight" class="nexa-num" style="font-weight:700; color:#fff;">50.00 Grams</span>
+                <span id="breakdown-weight" style="font-weight:700; color:#fff;">50.00 Grams</span>
               </div>
               <div class="breakdown-row">
                 <span class="text-muted">Pure Gold Equivalent:</span>
-                <span id="breakdown-pure" class="nexa-num" style="font-weight:700; color:#fff;">49.95 g (99.9%)</span>
+                <span id="breakdown-pure" style="font-weight:700; color:#fff;">49.95 g (99.9%)</span>
               </div>
               <div class="breakdown-row">
                 <span class="text-muted">Spot Benchmark Rate:</span>
-                <span id="breakdown-rate" class="nexa-num" style="font-weight:700; color:#fff;">$79.28 / gram</span>
+                <span id="breakdown-rate" style="font-weight:700; color:#fff;">$79.28 / gram</span>
               </div>
               <div class="breakdown-row total-row">
                 <span>ESTIMATED TOTAL:</span>
@@ -2097,7 +2072,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
               </svg>
-              <span>Instant order transmission to WhatsApp <strong>0755848198</strong></span>
+              <span>Instant order transmission to WhatsApp <strong>+256 755 848 198</strong></span>
             </div>
           </div>
 
@@ -2137,10 +2112,10 @@
             <tbody>
               <tr>
                 <td><strong>24K Fine Gold</strong></td>
-                <td class="nexa-num">999.9 / 99.99%</td>
-                <td class="nexa-num">$79.28</td>
-                <td class="nexa-num">$78.60</td>
-                <td class="nexa-num">$7,928.00</td>
+                <td>999.9 / 99.99%</td>
+                <td>$79.28</td>
+                <td>$78.60</td>
+                <td>$7,928.00</td>
                 <td>
                   <button class="trade-btn-sm" onclick="quickTradeKarat('24K', 'Buy', 79.28)">
                     Order 24K
@@ -2149,10 +2124,10 @@
               </tr>
               <tr>
                 <td><strong>22K Crown Gold</strong></td>
-                <td class="nexa-num">916.0 / 91.60%</td>
-                <td class="nexa-num">$72.62</td>
-                <td class="nexa-num">$71.95</td>
-                <td class="nexa-num">$7,262.00</td>
+                <td>916.0 / 91.60%</td>
+                <td>$72.62</td>
+                <td>$71.95</td>
+                <td>$7,262.00</td>
                 <td>
                   <button class="trade-btn-sm" onclick="quickTradeKarat('22K', 'Buy', 72.62)">
                     Order 22K
@@ -2161,10 +2136,10 @@
               </tr>
               <tr>
                 <td><strong>18K Fine Jewelry</strong></td>
-                <td class="nexa-num">750.0 / 75.00%</td>
-                <td class="nexa-num">$59.46</td>
-                <td class="nexa-num">$58.80</td>
-                <td class="nexa-num">$5,946.00</td>
+                <td>750.0 / 75.00%</td>
+                <td>$59.46</td>
+                <td>$58.80</td>
+                <td>$5,946.00</td>
                 <td>
                   <button class="trade-btn-sm" onclick="quickTradeKarat('18K', 'Sell', 58.80)">
                     Trade 18K
@@ -2173,10 +2148,10 @@
               </tr>
               <tr>
                 <td><strong>14K Commercial Gold</strong></td>
-                <td class="nexa-num">585.0 / 58.50%</td>
-                <td class="nexa-num">$46.38</td>
-                <td class="nexa-num">$45.70</td>
-                <td class="nexa-num">$4,638.00</td>
+                <td>585.0 / 58.50%</td>
+                <td>$46.38</td>
+                <td>$45.70</td>
+                <td>$4,638.00</td>
                 <td>
                   <button class="trade-btn-sm" onclick="quickTradeKarat('14K', 'Sell', 45.70)">
                     Trade 14K
@@ -2207,7 +2182,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">Fast &amp; Direct WhatsApp Booking</span>
-        <h2 class="section-title">Order &amp; Reach Out via <span style="color:var(--whatsapp-green);">WhatsApp 0755848198</span></h2>
+        <h2 class="section-title">Order &amp; Reach Out via <span style="color:var(--whatsapp-green);">WhatsApp +256 755 848 198</span></h2>
         <p class="section-desc">Fill out your gold requirements below. Our live generator formats a structured dispatch message straight to our chief bullion desk.</p>
       </div>
 
@@ -2251,7 +2226,7 @@
 
             <div class="form-group">
               <label class="form-label">Approximate Weight</label>
-              <input type="text" class="custom-input nexa-num" id="ob-weight" value="100 Grams" placeholder="e.g. 250g or 2kg" oninput="updateMessagePreview()">
+              <input type="text" class="custom-input" id="ob-weight" value="100 Grams" placeholder="e.g. 250g or 2kg" oninput="updateMessagePreview()">
             </div>
 
             <div class="form-group">
@@ -2298,7 +2273,7 @@
           <div class="live-msg-preview-box">
             <div class="live-msg-header">
               <span>💬 Live WhatsApp Message Preview</span>
-              <span id="target-phone-tag">Sending to: 0755 848 198</span>
+              <span id="target-phone-tag">Sending to: +256 755 848 198</span>
             </div>
             <div class="live-msg-text" id="ob-preview-text">
 👑 *T.J CONCEPTS - PRECIOUS METALS DISPATCH* 👑
@@ -2312,7 +2287,7 @@
 💼 *Settlement / Delivery:* Direct Physical Pick-up at Refinery
 📝 *Special Notes:* Ready for immediate transaction.
 -------------------------------------------
-_Sent via TJ Concepts Online Portal to 0755848198_
+_Sent via TJ Concepts Online Portal to +256755848198_
             </div>
           </div>
 
@@ -2324,7 +2299,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
               </svg>
-              <span>Transmit Order to WhatsApp 0755848198</span>
+              <span>Transmit Order to WhatsApp (+256 755 848 198)</span>
             </button>
           </div>
         </form>
@@ -2614,14 +2589,14 @@ _Sent via TJ Concepts Online Portal to 0755848198_
       <div class="section-header">
         <span class="section-subtitle">Seamless Workflow</span>
         <h2 class="section-title">How To Trade &amp; Refine In <span class="gold-text">4 Simple Steps</span></h2>
-        <p class="section-desc">A frictionless, transparent, and legally safeguarded procedure from initial WhatsApp inquiry on 0755848198 to final settlement.</p>
+        <p class="section-desc">A frictionless, transparent, and legally safeguarded procedure from initial WhatsApp inquiry on +256 755 848 198 to final settlement.</p>
       </div>
 
       <div class="process-steps">
         <div class="process-step glass-tile glass-tile-hover">
           <div class="step-number">1</div>
           <h3 class="step-title">Inquire via WhatsApp</h3>
-          <p class="step-desc">Use our online order builder or reach out directly to <strong>0755848198</strong> to specify whether you want to Buy, Sell, Refine, or Partner in Mining.</p>
+          <p class="step-desc">Use our online order builder or reach out directly to <strong>+256 755 848 198</strong> to specify whether you want to Buy, Sell, Refine, or Partner in Mining.</p>
         </div>
 
         <div class="process-step glass-tile glass-tile-hover">
@@ -2698,7 +2673,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
       <div class="section-header">
         <span class="section-subtitle">Frequently Asked Questions</span>
         <h2 class="section-title">Everything You Need To Know About <span class="gold-text">Trading With Us</span></h2>
-        <p class="section-desc">Got questions about gold testing, minimum quantities, or WhatsApp orders on 0755848198? Here are the most common inquiries.</p>
+        <p class="section-desc">Got questions about gold testing, minimum quantities, or WhatsApp orders on +256 755 848 198? Here are the most common inquiries.</p>
       </div>
 
       <div class="faq-grid">
@@ -2708,7 +2683,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </div>
           <div class="faq-answer">
-            When you select your desired service or calculate a quote on our site, clicking "Send to WhatsApp" pre-formats all your specifications (weight, purity karat, preferred settlement) into a concise message directed to <strong>0755848198</strong>. Our chief bullion officer responds immediately to confirm current live pricing and arrange delivery or assaying.
+            When you select your desired service or calculate a quote on our site, clicking "Send to WhatsApp" pre-formats all your specifications (weight, purity karat, preferred settlement) into a concise message directed to <strong>+256 755 848 198</strong>. Our chief bullion officer responds immediately to confirm current live pricing and arrange delivery or assaying.
           </div>
         </div>
 
@@ -2753,7 +2728,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
           <span class="section-subtitle">Reach Out Directly</span>
           <h3 style="font-size: 28px; color:#fff; margin-bottom:12px;">Direct Precious Metals Desk</h3>
           <p style="font-size: 14px; color:var(--text-muted); margin-bottom:24px;">
-            Have questions regarding wholesale bullion orders, commercial refining, or concession partnerships? Contact us directly via WhatsApp <strong>0755848198</strong>, phone, or visit our assay laboratory.
+            Have questions regarding wholesale bullion orders, commercial refining, or concession partnerships? Contact us directly via WhatsApp <strong>+256 755 848 198</strong>, phone, or visit our assay laboratory.
           </p>
 
           <div class="contact-info-list">
@@ -2765,7 +2740,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
               </div>
               <div class="c-info-text">
                 <h4>WhatsApp Direct Order Line</h4>
-                <p><a href="https://wa.me/256755848198?text=Hello%20TJ%20Concepts%2C%20I%20am%20reaching%20out%20for%20Gold%20Services." target="_blank" id="wa-display-link" style="color:var(--whatsapp-green); font-weight:700;" class="nexa-num">0755 848 198 (Click to Chat)</a></p>
+                <p><a href="https://wa.me/256755848198?text=Hello%20TJ%20Concepts%2C%20I%20am%20reaching%20out%20for%20Gold%20Services." target="_blank" id="wa-display-link" style="color:var(--whatsapp-green); font-weight:700;">+256 755 848 198 (Click to Chat)</a></p>
               </div>
             </div>
 
@@ -2775,7 +2750,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
               </div>
               <div class="c-info-text">
                 <h4>Direct Phone Call</h4>
-                <p><a href="tel:+256755848198" class="nexa-num" style="color:#fff; font-weight:700;">+256 755 848 198 / 0755848198</a></p>
+                <p><a href="tel:+256755848198" style="color:#fff; font-weight:700;">+256 755 848 198</a></p>
               </div>
             </div>
 
@@ -2785,7 +2760,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
               </div>
               <div class="c-info-text">
                 <h4>Corporate Email</h4>
-                <p><a href="/cdn-cgi/l/email-protection#f59a8791908786b5819f969a9b9690858186d8929a9991db969a98"><span class="__cf_email__" data-cfemail="016e736564737241756b626e6f62647175722c666e6d652f626e6c">[email&#160;protected]</span></a></p>
+                <p><a href="/cdn-cgi/l/email-protection#68071a0c0d1a1b281c020b07060b0d181c1b450f07040c460b0705"><span class="__cf_email__" data-cfemail="fb94899f9e8988bb8f91989495989e8b8f88d69c94979fd5989496">[email&#160;protected]</span></a></p>
               </div>
             </div>
 
@@ -2814,7 +2789,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
             </div>
             <div class="form-group">
               <label class="form-label">Phone Number / WhatsApp</label>
-              <input type="tel" class="custom-input nexa-num" id="cf-phone" placeholder="0755848198 or your number" required>
+              <input type="tel" class="custom-input" id="cf-phone" placeholder="+256 755 848 198 or your number" required>
             </div>
             <div class="form-group">
               <label class="form-label">Service of Interest</label>
@@ -2831,7 +2806,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
               <textarea class="custom-textarea" id="cf-msg" rows="3" placeholder="Specify estimated quantity in grams/kg and preferred date."></textarea>
             </div>
             <button type="submit" class="btn btn-gold" style="width:100%; padding:13px;">
-              Submit &amp; Open in WhatsApp 0755848198
+              Submit &amp; Open in WhatsApp (+256 755 848 198)
             </button>
           </form>
         </div>
@@ -2860,7 +2835,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
           </p>
           <div>
             <a href="https://wa.me/256755848198" target="_blank" class="btn btn-wa" style="padding:8px 16px; font-size:13px;">
-              WhatsApp: 0755848198
+              WhatsApp: +256 755 848 198
             </a>
           </div>
         </div>
@@ -2894,26 +2869,26 @@ _Sent via TJ Concepts Online Portal to 0755848198_
           <p style="font-size:12px; color:var(--text-muted); line-height:1.6; margin-bottom:14px;">
             All transactions undergo strict AML/CFT screening and OECD responsible mineral supply chains due diligence. Gold weights verified on Class I certified analytical balances.
           </p>
-          <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-light); padding:10px; border-radius:var(--radius-sm); font-size:11px; color:var(--gold-300);" class="nexa-font">
+          <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-light); padding:10px; border-radius:var(--radius-sm); font-size:11px; color:var(--gold-300);">
             ✓ 99.99% Fine Assay Guaranteed<br>
-            ✓ WhatsApp Orders: 0755848198
+            ✓ WhatsApp Orders: +256 755 848 198
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© <span id="current-year" class="nexa-num">2026</span> T.J Concepts. All rights reserved. Dealing in Fine Gold, Refining &amp; Mining Operations.</p>
-        <p style="font-size:12px; color:var(--text-dim);">WhatsApp Orders: <strong style="color:var(--gold-300);" class="nexa-num">0755848198</strong></p>
+        <p>© <span id="current-year">2026</span> T.J Concepts. All rights reserved. Dealing in Fine Gold, Refining &amp; Mining Operations.</p>
+        <p style="font-size:12px; color:var(--text-dim);">WhatsApp Orders: <strong style="color:var(--gold-300);">+256 755 848 198</strong></p>
       </div>
     </div>
   </footer>
 
-  <!-- ================= FLOATING WHATSAPP BUTTON (0755848198) ================= -->
-  <div class="floating-wa-btn" id="floating-wa-btn" onclick="toggleWhatsAppChatPopup()" title="Chat with T.J Concepts on WhatsApp (0755848198)">
+  <!-- ================= FLOATING WHATSAPP BUTTON (+256 755 848 198) ================= -->
+  <div class="floating-wa-btn" id="floating-wa-btn" onclick="toggleWhatsAppChatPopup()" title="Chat with T.J Concepts on WhatsApp (+256 755 848 198)">
     <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
     </svg>
-    <div class="wa-badge-count nexa-num">1</div>
+    <div class="wa-badge-count">1</div>
   </div>
 
   <!-- ================= FLOATING CHAT POPUP WIDGET ================= -->
@@ -2923,7 +2898,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
         <div class="wa-agent-avatar">TJ</div>
         <div class="wa-agent-info">
           <h4>T.J Concepts Gold Desk</h4>
-          <span class="nexa-num">WhatsApp 0755848198 • Online</span>
+          <span>WhatsApp +256 755 848 198 • Online</span>
         </div>
       </div>
       <button class="wa-chat-close" onclick="toggleWhatsAppChatPopup()">✕</button>
@@ -2931,7 +2906,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
 
     <div class="wa-chat-body">
       <div class="wa-bubble-incoming">
-        👋 Welcome to <strong>T.J Concepts</strong>! Reach out to our gold trading, refining &amp; mining team on <strong>0755848198</strong>. How can we help?
+        👋 Welcome to <strong>T.J Concepts</strong>! Reach out to our gold trading, refining &amp; mining team on <strong>+256 755 848 198</strong>. How can we help?
       </div>
 
       <div class="wa-quick-options">
@@ -2970,14 +2945,14 @@ _Sent via TJ Concepts Online Portal to 0755848198_
       <button class="modal-close-btn" onclick="closeSettingsModal()">✕</button>
       <h3 style="font-size:22px; color:#fff; margin-bottom:8px;">⚙️ Configure WhatsApp Number</h3>
       <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">
-        Current active WhatsApp number: <strong>0755848198</strong> (+256755848198). All orders, calculations, and inquiry buttons across the entire website automatically link to this number.
+        Current active WhatsApp number: <strong>+256 755 848 198</strong> (+256755848198). All orders, calculations, and inquiry buttons across the entire website automatically link to this number.
       </p>
 
       <div class="form-group">
         <label class="form-label">Business WhatsApp Phone (with Country Code)</label>
-        <input type="text" class="custom-input nexa-num" id="config-phone-input" value="256755848198" placeholder="e.g. 256755848198">
+        <input type="text" class="custom-input" id="config-phone-input" value="256755848198" placeholder="e.g. 256755848198">
         <small style="color:var(--text-dim); font-size:11px; display:block; margin-top:4px;">
-          Format: <code>256755848198</code> (Local: 0755848198)
+          Format: <code>256755848198</code> (Display: +256 755 848 198)
         </small>
       </div>
 
@@ -2998,7 +2973,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
     <div class="modal-content">
       <button class="modal-close-btn" onclick="closeQuickOrderModal()">✕</button>
       <h3 style="font-size:22px; color:#fff; margin-bottom:8px;" id="modal-order-title">Instant Gold Order</h3>
-      <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;" id="modal-order-desc">Send inquiry directly to our WhatsApp dispatch desk (0755848198).</p>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;" id="modal-order-desc">Send inquiry directly to our WhatsApp dispatch desk (+256 755 848 198).</p>
 
       <form onsubmit="handleQuickModalSubmit(event)">
         <div class="form-group">
@@ -3022,7 +2997,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
-          Open in WhatsApp (0755848198)
+          Open in WhatsApp (+256 755 848 198)
         </button>
       </form>
     </div>
@@ -3031,10 +3006,10 @@ _Sent via TJ Concepts Online Portal to 0755848198_
   <!-- ================= JAVASCRIPT LOGIC ================= -->
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     /* ==========================================================================
-       T.J CONCEPTS - LOGIC & WHATSAPP INTEGRATION (PHONE: 0755848198)
+       T.J CONCEPTS - LOGIC & WHATSAPP INTEGRATION (PHONE: +256 755 848 198)
        ========================================================================== */
 
-    // Primary Target Phone: 0755848198 (Uganda international: 256755848198)
+    // Primary Target Phone: +256 755 848 198 (Uganda international: 256755848198)
     let defaultPhone = "256755848198";
     let businessPhone = localStorage.getItem("tj_whatsapp_phone") || defaultPhone;
     let businessRep = localStorage.getItem("tj_whatsapp_rep") || "T.J Concepts Gold Desk";
@@ -3094,9 +3069,9 @@ _Sent via TJ Concepts Online Portal to 0755848198_
 
     function updateUIPhoneDisplays() {
       const cleanPhone = businessPhone.replace(/\D/g, "");
-      let formatted = "0755 848 198";
+      let formatted = "+256 755 848 198";
       if (cleanPhone === "256755848198" || cleanPhone === "0755848198") {
-        formatted = "0755 848 198";
+        formatted = "+256 755 848 198";
       } else if (cleanPhone.startsWith("256")) {
         formatted = "+256 " + cleanPhone.slice(3, 6) + " " + cleanPhone.slice(6, 9) + " " + cleanPhone.slice(9);
       } else {
@@ -3129,7 +3104,7 @@ _Sent via TJ Concepts Online Portal to 0755848198_
       const msg = `👑 *T.J CONCEPTS - DIRECT REACHOUT* 👑
 -------------------------------------------
 📌 *Inquiry:* ${topic}
-📞 *Desk Target:* 0755848198
+📞 *Desk Target:* +256 755 848 198
 -------------------------------------------
 Hello T.J Concepts, I would like to trade/inquire about your gold services.`;
       openWhatsAppLink(msg);
@@ -3224,7 +3199,7 @@ Hello T.J Concepts, I would like to trade/inquire about your gold services.`;
 ⚖️ *Weight:* ${weightInput} ${unitVal.toUpperCase()}
 ✨ *Purity Grade:* ${karatText}
 💰 *Estimated Valuation:* ${totalFormatted} (${currencyVal})
-📞 *Desk:* 0755848198
+📞 *Desk:* +256 755 848 198
 -------------------------------------------
 Hello T.J Concepts Desk, I would like to proceed with this order/inquiry. Please confirm spot rate and transaction execution.`;
 
@@ -3237,7 +3212,7 @@ Hello T.J Concepts Desk, I would like to proceed with this order/inquiry. Please
 -------------------------------------------
 📌 *Action:* ${mode.toUpperCase()} ${karat} GOLD
 📊 *Spot Rate:* $${rate.toFixed(2)} / gram
-📞 *Desk:* 0755848198
+📞 *Desk:* +256 755 848 198
 -------------------------------------------
 Hello T.J Concepts Desk, I would like to trade ${karat} gold at the spot rate. Please advise on available batch sizes and settlement options.`;
 
@@ -3313,7 +3288,7 @@ Hello T.J Concepts Desk, I would like to trade ${karat} gold at the spot rate. P
 📍 *Location:* ${location}
 💼 *Settlement / Delivery:* ${settlement}
 📝 *Special Notes:* ${notes}
-📞 *Reachout Line:* 0755848198
+📞 *Reachout Line:* +256 755 848 198
 -------------------------------------------
 _Sent via TJ Concepts Online Portal_`;
 
@@ -3358,7 +3333,7 @@ _Sent via TJ Concepts Online Portal_`;
 📦 *Selected Item:* ${title}
 ⚖️ *Weight:* ${weight}
 ✨ *Purity Standard:* ${purity}
-📞 *Desk Target:* 0755848198
+📞 *Desk Target:* +256 755 848 198
 -------------------------------------------
 Hello T.J Concepts Desk, I am interested in booking/ordering this item. Please inform me of the current spot quotation and execution timeline.`;
 
@@ -3376,7 +3351,7 @@ Hello T.J Concepts Desk, I am interested in booking/ordering this item. Please i
 `👑 *T.J CONCEPTS - QUICK INQUIRY* 👑
 -------------------------------------------
 💬 *Topic:* ${promptText}
-📞 *Desk:* 0755848198
+📞 *Desk:* +256 755 848 198
 -------------------------------------------
 Hello T.J Concepts, I would like more information on your gold services regarding this topic.`;
 
@@ -3389,7 +3364,7 @@ Hello T.J Concepts, I would like more information on your gold services regardin
       if (input && input.value.trim()) {
         const customText = input.value.trim();
         const msg = 
-`👑 *T.J CONCEPTS - DIRECT MESSAGE (0755848198)* 👑
+`👑 *T.J CONCEPTS - DIRECT MESSAGE (+256 755 848 198)* 👑
 -------------------------------------------
 ${customText}
 -------------------------------------------
@@ -3406,7 +3381,7 @@ _Sent from T.J Concepts Live Web Widget_`;
       const modal = document.getElementById("quick-order-modal");
       const title = document.getElementById("modal-order-title");
       const details = document.getElementById("qm-details");
-      if (title) title.textContent = serviceName || "Gold Inquiry Desk (0755848198)";
+      if (title) title.textContent = serviceName || "Gold Inquiry Desk (+256 755 848 198)";
       if (details) details.value = serviceName || "Gold Buying / Refining Inquiry";
       if (modal) modal.classList.add("active");
     }
@@ -3434,7 +3409,7 @@ _Sent from T.J Concepts Live Web Widget_`;
 📦 *Requirement:* ${details}
 📍 *Location:* ${location || "Not specified"}
 📝 *Notes:* ${notes || "Standard inquiry"}
-📞 *Desk Line:* 0755848198
+📞 *Desk Line:* +256 755 848 198
 -------------------------------------------
 Hello, please provide quotation and execution terms.`;
 
@@ -3456,7 +3431,7 @@ Hello, please provide quotation and execution terms.`;
 📞 *Contact Phone:* ${phone}
 🎯 *Service:* ${service}
 📝 *Message:* ${msgText}
-📞 *Reachout Desk:* 0755848198
+📞 *Reachout Desk:* +256 755 848 198
 -------------------------------------------
 _Sent from TJ Concepts VIP Contact Form_`;
 
@@ -3497,12 +3472,12 @@ _Sent from TJ Concepts VIP Contact Form_`;
       updateUIPhoneDisplays();
       updateMessagePreview();
       closeSettingsModal();
-      alert("✓ WhatsApp Configuration Updated Successfully! All website order buttons will now transmit to: " + businessPhone);
+      alert("✓ WhatsApp Configuration Updated Successfully! All website order buttons will now transmit to: +" + businessPhone);
     }
 
     function toggleFaq(item) {
       item.classList.toggle("active");
     }
   </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a303dd346cf1fbb0',t:'MTc4NzU5MDMxMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30404a0797f90cf',t:'MTc4NzU5MTkyNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
