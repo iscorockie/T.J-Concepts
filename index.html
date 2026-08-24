@@ -1,718 +1,3612 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ghouse Records — Kiwatule, Kampala</title>
-<meta name="description" content="Ghouse Records: recording studio and label in Kiwatule, Kampala. Book studio sessions, catch the monthly silent disco night.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#100E0C;
-    --bg-elevated:#1B1714;
-    --bg-elevated-2:#231D19;
-    --paper:#F3EDE4;
-    --ink:#F3EDE4;
-    --muted:#9C948A;
-    --line:#332C26;
-    --accent:#E8432F;
-    --radius:2px;
-    --text-secondary:#CFC7BC;
-    --header-bg:rgba(16,14,12,.82);
-    --invert-bg:#F3EDE4;
-    --invert-text:#100E0C;
-  }
-  html[data-theme="light"]{
-    --bg:#F3EDE4;
-    --bg-elevated:#EAE2D6;
-    --bg-elevated-2:#E0D6C6;
-    --ink:#1B1613;
-    --muted:#746B60;
-    --line:#D8CDBC;
-    --text-secondary:#4A4038;
-    --header-bg:rgba(243,237,228,.88);
-    --invert-bg:#100E0C;
-    --invert-text:#F3EDE4;
-  }
-  body{transition:background-color .25s ease, color .25s ease;}
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:'Inter',sans-serif;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  ::selection{background:var(--accent); color:#100E0C;}
-  a{color:inherit; text-decoration:none;}
-  img{max-width:100%; display:block;}
-  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
-  .eyebrow{
-    font-family:'Space Mono',monospace;
-    font-size:12px;
-    letter-spacing:.18em;
-    text-transform:uppercase;
-    color:var(--muted);
-  }
-  .eyebrow em{font-style:normal; color:var(--accent);}
-  h1,h2,h3{
-    font-family:'Anton',sans-serif;
-    font-weight:400;
-    text-transform:uppercase;
-    line-height:0.94;
-    letter-spacing:.01em;
-  }
-  h2{font-size:clamp(34px,5.5vw,58px); margin-bottom:10px;}
-  .section{padding:100px 0;}
-  .section-head{margin-bottom:56px; max-width:640px;}
-  .section-head p{color:var(--muted); font-size:16px; margin-top:14px; line-height:1.6;}
-  :focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T.J CONCEPTS | Premium Gold Trading, Refining & Mining Solutions</title>
+  <meta name="description" content="T.J Concepts - Premier Gold Solutions: Buy & Sell Gold, Certified High-Purity Gold Refining, and Sustainable Mining Operations. Direct WhatsApp Orders & Valuation.">
+  <style>
+    /* ==========================================================================
+       T.J CONCEPTS - LUXURY GOLD THEME STYLESHEET
+       ========================================================================== */
+    :root {
+      --bg-deep: #07080a;
+      --bg-surface: #0e1017;
+      --bg-card: #151822;
+      --bg-card-hover: #1c202e;
+      --bg-glass: rgba(21, 24, 34, 0.75);
+      --bg-glass-gold: rgba(212, 175, 55, 0.08);
 
-  /* ---------- NAV ---------- */
-  header{
-    position:fixed; top:0; left:0; right:0; z-index:100;
-    backdrop-filter:blur(10px);
-    background:var(--header-bg);
-    border-bottom:1px solid var(--line);
-  }
-  nav.wrap{
-    display:flex; align-items:center; justify-content:space-between;
-    height:72px;
-  }
-  .logo{
-    font-family:'Anton',sans-serif; font-size:20px; letter-spacing:.02em;
-    text-transform:uppercase;
-  }
-  .logo span{color:var(--accent);}
-  .navlinks{display:flex; gap:30px; align-items:center;}
-  .navlinks a{
-    font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.1em;
-    text-transform:uppercase; color:var(--muted);
-    transition:color .2s;
-  }
-  .navlinks a:hover{color:var(--ink);}
-  .navlinks a.ig{color:var(--ink); border:1px solid var(--line); padding:9px 16px; border-radius:100px;}
-  .navlinks a.ig:hover{border-color:var(--accent); color:var(--accent);}
-  .nav-right{display:flex; align-items:center; gap:20px;}
-  .theme-toggle{
-    width:38px; height:38px; border-radius:50%; flex-shrink:0;
-    border:1px solid var(--line); background:transparent; cursor:pointer;
-    display:flex; align-items:center; justify-content:center;
-    transition:border-color .2s, transform .2s;
-  }
-  .theme-toggle:hover{border-color:var(--accent); transform:translateY(-1px);}
-  .theme-toggle span{font-size:16px; line-height:1; color:var(--ink);}
-  .theme-toggle .icon-moon{display:none;}
-  html[data-theme="light"] .theme-toggle .icon-sun{display:none;}
-  html[data-theme="light"] .theme-toggle .icon-moon{display:inline;}
-  @media (max-width:760px){
-    .navlinks{display:none;}
-  }
+      --gold-100: #fff9db;
+      --gold-200: #fcf6ba;
+      --gold-300: #f3e08b;
+      --gold-400: #e6ca65;
+      --gold-500: #d4af37;
+      --gold-600: #b89128;
+      --gold-700: #8c6a18;
+      --gold-800: #59420b;
 
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;
-    min-height:92vh;
-    display:flex; flex-direction:column; justify-content:center;
-    padding-top:110px;
-    padding-bottom:60px;
-    overflow:hidden;
-  }
-  .eq{
-    position:absolute; inset:0; z-index:0;
-    display:flex; align-items:flex-end; justify-content:space-between;
-    gap:4px;
-    opacity:.5;
-  }
-  .eq i{
-    flex:1;
-    background:linear-gradient(to top, var(--accent), transparent);
-    opacity:.3;
-    animation:bar 1.8s ease-in-out infinite;
-  }
-  @keyframes bar{
-    0%,100%{height:6%;}
-    50%{height:var(--h,60%);}
-  }
-  .hero-inner{position:relative; z-index:2;}
-  .hero h1{
-    font-size:clamp(48px,9vw,116px);
-    margin:18px 0 22px;
-  }
-  .hero h1 .line{display:block;}
-  .hero h1 .accented{color:var(--accent);}
-  .hero-sub{
-    max-width:540px; color:var(--muted); font-size:17px; line-height:1.65;
-    margin-bottom:40px;
-  }
-  .hero-cta{display:flex; gap:14px; flex-wrap:wrap;}
-  .btn{
-    font-family:'Space Mono',monospace; font-size:12.5px; letter-spacing:.08em;
-    text-transform:uppercase;
-    padding:15px 26px;
-    border-radius:100px;
-    display:inline-flex; align-items:center; gap:8px;
-    transition:transform .18s ease, background .2s, border-color .2s, color .2s;
-    cursor:pointer; border:1px solid transparent;
-  }
-  .btn:hover{transform:translateY(-2px);}
-  .btn-solid{background:var(--accent); color:#100E0C;}
-  .btn-ghost{border-color:var(--line); color:var(--ink);}
-  .btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
+      --gold-gradient: linear-gradient(135deg, #fff2a3 0%, #e2b947 25%, #aa7a1e 50%, #f6dd7f 75%, #ffe68f 100%);
+      --gold-gradient-subtle: linear-gradient(135deg, rgba(252, 246, 186, 0.15) 0%, rgba(170, 120, 30, 0.08) 100%);
+      --gold-border: linear-gradient(135deg, #fcf6ba 0%, #d4af37 40%, #59420b 100%);
+      --dark-gradient: linear-gradient(180deg, #0e1017 0%, #07080a 100%);
 
-  /* ---------- MARQUEE ---------- */
-  .marquee{
-    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-    overflow:hidden; white-space:nowrap; background:var(--bg-elevated);
-  }
-  .marquee-track{
-    display:inline-block; padding:16px 0;
-    animation:scroll 28s linear infinite;
-  }
-  .marquee-track span{
-    font-family:'Space Mono',monospace; font-size:13px; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--muted); margin:0 26px;
-  }
-  .marquee-track span.hi{color:var(--accent);}
-  @keyframes scroll{ 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+      --text-main: #f4f5f7;
+      --text-muted: #9fa4b2;
+      --text-dim: #656a79;
+      --text-gold: #e6ca65;
 
-  /* ---------- ABOUT ---------- */
-  .about-grid{
-    display:grid; grid-template-columns:1.1fr .9fr; gap:70px; align-items:start;
-  }
-  .about-copy p{color:var(--text-secondary); font-size:16px; line-height:1.75; margin-bottom:18px; max-width:520px;}
-  .about-copy p strong{color:var(--ink);}
-  .stat-list{
-    border-top:1px solid var(--line);
-  }
-  .stat{
-    display:flex; justify-content:space-between; align-items:baseline;
-    padding:20px 0; border-bottom:1px solid var(--line);
-    font-family:'Space Mono',monospace;
-  }
-  .stat .k{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
-  .stat .v{font-family:'Anton',sans-serif; font-size:26px; text-transform:none;}
+      --whatsapp-green: #25D366;
+      --whatsapp-dark: #128C7E;
+      --whatsapp-glow: rgba(37, 211, 102, 0.35);
 
-  /* ---------- BOOKING ---------- */
-  .booking{background:var(--bg-elevated); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-  .booking-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:70px; align-items:start;}
-  .booking-copy p{color:var(--text-secondary); font-size:16px; line-height:1.75; margin-bottom:16px; max-width:440px;}
-  .package-list{margin-top:28px; display:flex; flex-direction:column; gap:0;}
-  .package{
-    display:flex; justify-content:space-between; padding:14px 0; border-bottom:1px solid var(--line);
-    font-family:'Space Mono',monospace; font-size:13px;
-  }
-  .package .p-name{color:var(--ink); text-transform:uppercase; letter-spacing:.05em;}
-  .package .p-rate{color:var(--muted);}
-  .package.hl .p-rate{color:var(--accent);}
+      --accent-emerald: #10b981;
+      --accent-ruby: #ef4444;
+      --accent-sapphire: #3b82f6;
 
-  form{
-    background:var(--bg); border:1px solid var(--line); border-radius:var(--radius);
-    padding:34px;
-  }
-  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
-  .field{display:flex; flex-direction:column; gap:8px; margin-bottom:16px;}
-  .field label{
-    font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
-  }
-  .field input, .field select, .field textarea{
-    background:var(--bg-elevated); border:1px solid var(--line); color:var(--ink);
-    padding:13px 14px; font-family:'Inter',sans-serif; font-size:14.5px; border-radius:2px;
-    width:100%;
-  }
-  .field select{appearance:none; cursor:pointer;}
-  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--accent); outline:none;}
-  .field textarea{resize:vertical; min-height:80px;}
-  .submit-row{display:flex; align-items:center; gap:16px; margin-top:6px; flex-wrap:wrap;}
-  .form-note{font-family:'Space Mono',monospace; font-size:11px; color:var(--muted); line-height:1.6;}
+      --border-subtle: rgba(212, 175, 55, 0.18);
+      --border-light: rgba(255, 255, 255, 0.07);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
 
-  /* ---------- SILENT DISCO ---------- */
-  .disco-list{border-top:1px solid var(--line);}
-  .disco-row{
-    display:grid; grid-template-columns:110px 1fr auto auto; gap:24px; align-items:center;
-    padding:24px 0; border-bottom:1px solid var(--line);
-  }
-  .disco-date{font-family:'Space Mono',monospace; display:flex; flex-direction:column; line-height:1.3;}
-  .disco-date .dd{font-size:11px; letter-spacing:.1em; color:var(--accent);}
-  .disco-date .dm{font-size:18px; color:var(--ink);}
-  .disco-info h3{font-family:'Anton',sans-serif; text-transform:uppercase; font-size:20px; margin-bottom:4px;}
-  .disco-info p{font-size:13.5px; color:var(--muted);}
-  .disco-price{font-family:'Space Mono',monospace; font-size:14px; color:var(--ink); white-space:nowrap;}
-  .rsvp{
-    font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase;
-    color:var(--ink); border:1px solid var(--line); padding:9px 15px; border-radius:100px;
-    transition:all .2s; white-space:nowrap;
-  }
-  .rsvp:hover{border-color:var(--accent); color:var(--accent);}
-  .disco-note{
-    margin-top:22px; font-family:'Space Mono',monospace; font-size:12px; color:var(--muted);
-  }
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.7);
+      --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.2);
 
-  /* ---------- TICKETING ---------- */
-  .tiers{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:44px;}
-  .tier{
-    border:1px solid var(--line); border-radius:var(--radius); padding:30px 26px;
-    display:flex; flex-direction:column; gap:14px;
-    transition:border-color .25s;
-  }
-  .tier.featured{border-color:var(--accent); background:var(--bg-elevated);}
-  .tier-name{font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
-  .tier-price{font-family:'Anton',sans-serif; font-size:40px;}
-  .tier-price sup{font-family:'Space Mono',monospace; font-size:14px; margin-left:4px; color:var(--muted);}
-  .tier ul{list-style:none; font-size:13.5px; color:var(--text-secondary); line-height:2; margin:6px 0 10px;}
-  .tier ul li::before{content:"— "; color:var(--muted);}
-  .stepper{display:flex; align-items:center; gap:14px; margin-top:auto;}
-  .stepper button{
-    width:32px; height:32px; border-radius:50%; border:1px solid var(--line); background:transparent; color:var(--ink);
-    font-size:16px; cursor:pointer; font-family:'Space Mono',monospace;
-  }
-  .stepper button:hover{border-color:var(--accent); color:var(--accent);}
-  .stepper .qty{font-family:'Space Mono',monospace; min-width:18px; text-align:center;}
-  .tier-btn{
-    margin-top:10px; text-align:center; padding:13px; border-radius:100px;
-    font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
-    background:var(--invert-bg); color:var(--invert-text); cursor:pointer; border:none;
-  }
-  .tier-btn:hover{background:var(--accent);}
+      --font-serif: "Cinzel", "Playfair Display", "Georgia", "Times New Roman", serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
 
-  .ticket-summary{
-    background:var(--bg-elevated); border:1px dashed var(--line); border-radius:var(--radius);
-    padding:30px; display:grid; grid-template-columns:1fr auto; gap:20px; align-items:center;
-  }
-  .ref{font-family:'Space Mono',monospace; font-size:13px; color:var(--muted);}
-  .ref b{color:var(--ink); letter-spacing:.05em;}
-  .momo-steps{font-family:'Space Mono',monospace; font-size:12px; color:var(--muted); line-height:2; margin-top:10px;}
-  .momo-steps b{color:var(--ink);}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
-  /* ---------- GALLERY ---------- */
-  .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:14px;}
-  .gallery img{
-    width:100%; height:220px; object-fit:cover; border-radius:2px; filter:grayscale(.15) contrast(1.05);
-    transition:filter .3s;
-  }
-  .gallery a:hover img{filter:none;}
-  .gallery a:nth-child(1){grid-row:span 2; height:100%;}
-  .gallery a:nth-child(1) img{height:100%;}
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(184, 145, 40, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 50% 90%, rgba(252, 246, 186, 0.03) 0%, transparent 60%);
+      background-attachment: fixed;
+    }
 
-  /* ---------- FOOTER ---------- */
-  footer{border-top:1px solid var(--line); padding:70px 0 30px;}
-  .footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:50px; margin-bottom:60px;}
-  .footer-brand h3{font-size:32px; margin-bottom:14px;}
-  .footer-brand p{color:var(--muted); font-size:14px; max-width:280px; line-height:1.6;}
-  .foot-col{display:flex; flex-direction:column; gap:12px;}
-  .foot-col .k{font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:6px;}
-  .foot-col a, .foot-col span{font-size:14.5px; color:var(--text-secondary);}
-  .foot-col a:hover{color:var(--accent);}
-  .footer-bottom{
-    display:flex; justify-content:space-between; align-items:center; padding-top:24px; border-top:1px solid var(--line);
-    font-family:'Space Mono',monospace; font-size:11.5px; color:var(--muted); flex-wrap:wrap; gap:10px;
-  }
+    /* Selection & Scrollbar */
+    ::selection {
+      background: var(--gold-500);
+      color: #07080a;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-deep);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a2e3d;
+      border-radius: 5px;
+      border: 2px solid var(--bg-deep);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--gold-600);
+    }
 
-  @media (max-width:900px){
-    .about-grid, .booking-grid{grid-template-columns:1fr; gap:40px;}
-    .tiers{grid-template-columns:1fr;}
-    .gallery{grid-template-columns:1fr 1fr;}
-    .gallery a:nth-child(1){grid-row:span 1; height:220px;}
-    .footer-grid{grid-template-columns:1fr;}
-    .form-row{grid-template-columns:1fr;}
-    .disco-row{grid-template-columns:1fr; gap:8px; text-align:left;}
-    .disco-price{order:3;}
-    .rsvp{order:4; align-self:flex-start;}
-  }
-  @media (max-width:600px){
-    .section{padding:70px 0;}
-  }
-</style>
+    /* Typography */
+    h1, h2, h3, h4, .serif-font {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+    .gold-text {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .gold-text-glow {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      outline: none;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Announcement Bar */
+    .top-bar {
+      background: linear-gradient(90deg, #0b0c10, #141722, #0b0c10);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 13px;
+      padding: 8px 0;
+      color: var(--text-muted);
+      position: relative;
+      z-index: 100;
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .ticker-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ticker-tag {
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--gold-500);
+      color: var(--gold-300);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .ticker-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .ticker-val-up {
+      color: var(--accent-emerald);
+      font-weight: 600;
+    }
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .wa-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #90f5b1;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid rgba(37, 211, 102, 0.35);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .wa-pill:hover {
+      background: rgba(37, 211, 102, 0.25);
+      border-color: var(--whatsapp-green);
+      transform: translateY(-1px);
+    }
+    .settings-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      transition: 0.2s;
+    }
+    .settings-btn:hover {
+      color: var(--gold-300);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* Main Navbar */
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(7, 8, 10, 0.9);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+      z-index: 99;
+      transition: all 0.3s ease;
+    }
+    .header.scrolled {
+      background: rgba(7, 8, 10, 0.98);
+      box-shadow: var(--shadow-md);
+      border-bottom: 1px solid var(--gold-600);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-emblem {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #1f2330, #0a0b0f);
+      border: 1px solid var(--gold-500);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-emblem::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.2) 50%, transparent 60%);
+      transform: rotate(30deg);
+      animation: shine 4s infinite;
+    }
+    @keyframes shine {
+      0% { transform: translateX(-100%) rotate(30deg); }
+      20%, 100% { transform: translateX(100%) rotate(30deg); }
+    }
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-title {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      line-height: 1.1;
+      color: #fff;
+    }
+    .logo-subtitle {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: var(--gold-400);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      position: relative;
+      padding: 6px 0;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #fff;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-gradient);
+      transition: width 0.25s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 22px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #121318;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.35);
+      font-weight: 700;
+    }
+    .btn-gold:hover {
+      box-shadow: 0 6px 26px rgba(212, 175, 55, 0.55);
+      transform: translateY(-2px);
+      filter: brightness(1.06);
+    }
+    .btn-gold:active {
+      transform: translateY(0);
+    }
+
+    .btn-wa {
+      background: linear-gradient(135deg, #25D366 0%, #1da851 100%);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
+      font-weight: 600;
+    }
+    .btn-wa:hover {
+      background: linear-gradient(135deg, #28e46e 0%, #1fae54 100%);
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-gold {
+      background: rgba(212, 175, 55, 0.06);
+      color: var(--gold-300);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+    .btn-outline-gold:hover {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: var(--gold-400);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-light);
+      color: var(--text-main);
+      padding: 8px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 90px 0 80px;
+      overflow: hidden;
+    }
+    .hero-glow-bg {
+      position: absolute;
+      top: -20%;
+      right: 10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0) 70%);
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      color: var(--gold-300);
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .hero-title {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+      color: #fff;
+    }
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 34px;
+      max-width: 580px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-light);
+    }
+    .stat-item h3 {
+      font-size: 26px;
+      color: var(--gold-300);
+      margin-bottom: 4px;
+    }
+    .stat-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Hero Bullion / Showcase Visual */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .visual-card {
+      background: linear-gradient(145deg, #151824 0%, #0d0e15 100%);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 35px rgba(212, 175, 55, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .visual-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gold-gradient);
+    }
+    .bullion-3d-wrap {
+      width: 100%;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      position: relative;
+    }
+    .gold-bar-graphic {
+      width: 220px;
+      height: 120px;
+      background: linear-gradient(135deg, #fff7b2 0%, #d4af37 30%, #997017 65%, #ffe68a 100%);
+      border-radius: 12px;
+      box-shadow: 
+        inset 0 2px 4px rgba(255,255,255,0.7),
+        inset 0 -3px 6px rgba(0,0,0,0.5),
+        0 20px 35px rgba(0,0,0,0.6),
+        0 0 40px rgba(212, 175, 55, 0.4);
+      transform: perspective(600px) rotateX(25deg) rotateY(-12deg) rotateZ(3deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #4a3407;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+      border: 1px solid rgba(255,255,255,0.4);
+      position: relative;
+      animation: float 5s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: perspective(600px) rotateX(24deg) rotateY(-10deg) translateY(0px); }
+      100% { transform: perspective(600px) rotateX(28deg) rotateY(-14deg) translateY(-12px); }
+    }
+    .bar-stamp {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+    }
+    .bar-purity {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-top: 2px;
+      background: rgba(0,0,0,0.1);
+      padding: 1px 8px;
+      border-radius: 4px;
+    }
+    .bar-serial {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      margin-top: 6px;
+      opacity: 0.8;
+      font-family: monospace;
+    }
+
+    .visual-features {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .v-feat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255,255,255,0.03);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.05);
+      font-size: 13px;
+    }
+    .v-feat-label {
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .v-feat-val {
+      font-weight: 600;
+      color: var(--gold-200);
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+    .section-subtitle {
+      color: var(--gold-400);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .section-title {
+      font-size: 36px;
+      line-height: 1.25;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    /* Live Gold Calculator & Rates Section */
+    .calc-section {
+      padding: 60px 0 80px;
+      background: linear-gradient(180deg, rgba(14, 16, 23, 0.4) 0%, rgba(7, 8, 10, 0.9) 100%);
+      position: relative;
+    }
+    .calc-card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+    .calc-left h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .calc-left p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .input-row {
+      display: flex;
+      gap: 12px;
+    }
+    .custom-input, .custom-select, .custom-textarea {
+      width: 100%;
+      background: #090a0f;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      color: #fff;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+    .custom-input:focus, .custom-select:focus, .custom-textarea:focus {
+      border-color: var(--gold-400);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+      background: #0d0f17;
+    }
+    .custom-select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+    }
+    .custom-select option {
+      background: #11131a;
+      color: #fff;
+    }
+
+    .pill-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .pill-opt {
+      text-align: center;
+      padding: 10px 8px;
+      background: #0b0c12;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+    .pill-opt.active, .pill-opt:hover {
+      border-color: var(--gold-500);
+      background: rgba(212, 175, 55, 0.12);
+      color: var(--gold-200);
+    }
+
+    .calc-right {
+      background: linear-gradient(145deg, #0d0f17 0%, #07080b 100%);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .calc-summary-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-400);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .calc-breakdown {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .breakdown-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+    }
+    .breakdown-row.total-row {
+      border-bottom: none;
+      padding-top: 10px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .grand-total-val {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      color: var(--gold-300);
+    }
+
+    .calc-wa-preview {
+      background: rgba(37, 211, 102, 0.07);
+      border: 1px solid rgba(37, 211, 102, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      font-size: 12px;
+      color: #bbf7d0;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    /* Live Rates Table Box */
+    .rates-box {
+      margin-top: 40px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .rates-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .rates-table-wrap {
+      overflow-x: auto;
+    }
+    .rates-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+    .rates-table th {
+      padding: 12px 16px;
+      color: var(--gold-400);
+      font-weight: 600;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .rates-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+    }
+    .rates-table tr:hover td {
+      background: rgba(212, 175, 55, 0.03);
+    }
+    .rates-table .trade-btn-sm {
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 6px;
+      background: rgba(37, 211, 102, 0.15);
+      color: #4ade80;
+      border: 1px solid rgba(37, 211, 102, 0.35);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .rates-table .trade-btn-sm:hover {
+      background: var(--whatsapp-green);
+      color: #000;
+    }
+
+    /* Core Services Section */
+    .services-section {
+      padding: 100px 0;
+      position: relative;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .service-card {
+      background: linear-gradient(160deg, #161924 0%, #0c0e14 100%);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--gold-400);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.2);
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gold-gradient);
+      opacity: 0.7;
+    }
+    .service-icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      color: var(--gold-300);
+    }
+    .service-title {
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .service-desc {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+    .service-list {
+      list-style: none;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .service-list li {
+      font-size: 13px;
+      color: #d1d5db;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .service-list li svg {
+      color: var(--gold-400);
+      flex-shrink: 0;
+    }
+    .service-card-footer {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* Comprehensive WhatsApp Order Builder Section */
+    .order-builder-section {
+      padding: 90px 0;
+      background: radial-gradient(circle at center, #171a26 0%, #08090d 100%);
+      position: relative;
+    }
+    .order-box {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-500);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 35px rgba(212, 175, 55, 0.15);
+      position: relative;
+    }
+    .order-tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 16px;
+      overflow-x: auto;
+    }
+    .order-tab {
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .order-tab.active {
+      background: var(--gold-gradient);
+      color: #0b0c10;
+      border-color: transparent;
+      font-weight: 700;
+    }
+    .order-tab:hover:not(.active) {
+      border-color: var(--gold-400);
+      color: #fff;
+    }
+
+    .form-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .live-msg-preview-box {
+      background: #07090e;
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin: 28px 0;
+      position: relative;
+    }
+    .live-msg-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: var(--whatsapp-green);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .live-msg-text {
+      font-family: monospace;
+      font-size: 13px;
+      color: #e5e7eb;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      background: #0e111a;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* Products / Catalog Showcase */
+    .catalog-section {
+      padding: 90px 0;
+    }
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-light);
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: var(--gold-400);
+      color: var(--gold-200);
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .product-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      border-color: var(--gold-500);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    }
+    .product-thumb {
+      height: 170px;
+      background: linear-gradient(135deg, #191c28, #0f1118);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      padding: 20px;
+    }
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,0.6);
+      border: 1px solid var(--gold-500);
+      color: var(--gold-300);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .product-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .product-title {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .product-specs {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .product-price-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .p-price-label {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+    .p-price {
+      font-weight: 700;
+      color: var(--gold-300);
+      font-size: 15px;
+    }
+
+    /* Purity & Karat Assurance Guide */
+    .purity-section {
+      padding: 90px 0;
+      background: linear-gradient(180deg, #07080a 0%, #11131c 50%, #07080a 100%);
+    }
+    .purity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .purity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .purity-card:hover {
+      border-color: var(--gold-400);
+      transform: translateY(-4px);
+    }
+    .purity-karat {
+      font-size: 32px;
+      font-family: var(--font-serif);
+      color: var(--gold-300);
+      margin-bottom: 4px;
+    }
+    .purity-pct {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .purity-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* 4-Step Process Section */
+    .process-section {
+      padding: 90px 0;
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .process-step {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 28px 22px;
+      position: relative;
+    }
+    .step-number {
+      position: absolute;
+      top: -16px;
+      left: 22px;
+      width: 34px;
+      height: 34px;
+      background: var(--gold-gradient);
+      color: #0b0c10;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .step-title {
+      font-size: 17px;
+      color: #fff;
+      margin: 14px 0 10px;
+    }
+    .step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Trust, Assaying & Security Highlights */
+    .trust-section {
+      padding: 80px 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .trust-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .trust-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-300);
+      flex-shrink: 0;
+    }
+    .trust-text h4 {
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .trust-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Testimonials & FAQs */
+    .faq-section {
+      padding: 90px 0;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+    .faq-item.active {
+      border-color: rgba(212, 175, 55, 0.4);
+    }
+    .faq-question {
+      padding: 20px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question svg {
+      transition: transform 0.3s;
+      color: var(--gold-400);
+      flex-shrink: 0;
+    }
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: none;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* VIP Contact / WhatsApp Direct Hub */
+    .contact-section {
+      padding: 90px 0;
+      background: linear-gradient(180deg, #090a0f 0%, #151824 100%);
+      position: relative;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .c-info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .c-info-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-300);
+      flex-shrink: 0;
+    }
+    .c-info-text h4 {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .c-info-text p, .c-info-text a {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .c-info-text a:hover {
+      color: var(--gold-300);
+    }
+
+    /* Footer */
+    .footer {
+      background: #040507;
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 70px 0 30px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+    .footer-col h4 {
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 18px;
+      letter-spacing: 0.05em;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links a:hover {
+      color: var(--gold-300);
+      padding-left: 4px;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* Floating WhatsApp Button & Live Drawer */
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 62px;
+      height: 62px;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.7);
+      cursor: pointer;
+      z-index: 1000;
+      transition: all 0.3s ease;
+      animation: waPulse 2.5s infinite;
+    }
+    @keyframes waPulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .floating-wa-btn:hover {
+      transform: scale(1.1) rotate(6deg);
+    }
+    .wa-badge-count {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      background: #ef4444;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--bg-deep);
+    }
+
+    /* Floating WhatsApp Chat Widget */
+    .wa-chat-popup {
+      position: fixed;
+      bottom: 100px;
+      right: 28px;
+      width: 360px;
+      max-width: calc(100vw - 40px);
+      background: #0f1118;
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+      z-index: 1000;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      transform-origin: bottom right;
+      animation: popIn 0.25s ease-out;
+    }
+    .wa-chat-popup.active {
+      display: flex;
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .wa-chat-head {
+      background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+      padding: 16px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wa-chat-agent {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .wa-agent-avatar {
+      width: 36px;
+      height: 36px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .wa-agent-info h4 {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .wa-agent-info span {
+      font-size: 11px;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .wa-agent-info span::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #25D366;
+      border-radius: 50%;
+    }
+    .wa-chat-close {
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .wa-chat-body {
+      padding: 18px;
+      background: #090a10;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+    .wa-bubble-incoming {
+      background: #191c28;
+      border-radius: 12px 12px 12px 0;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #e5e7eb;
+      max-width: 90%;
+      border-left: 3px solid var(--gold-500);
+    }
+    .wa-quick-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .wa-quick-opt {
+      background: rgba(37, 211, 102, 0.08);
+      border: 1px solid rgba(37, 211, 102, 0.25);
+      color: #a7f3d0;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wa-quick-opt:hover {
+      background: rgba(37, 211, 102, 0.2);
+      border-color: var(--whatsapp-green);
+      color: #fff;
+      transform: translateX(3px);
+    }
+    .wa-chat-foot {
+      padding: 12px 16px;
+      background: #111420;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .wa-custom-input-wrap {
+      display: flex;
+      gap: 8px;
+    }
+    .wa-msg-input {
+      flex-grow: 1;
+      background: #08090e;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      color: #fff;
+      font-size: 13px;
+    }
+    .wa-send-btn {
+      background: var(--whatsapp-green);
+      border: none;
+      border-radius: var(--radius-sm);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      cursor: pointer;
+      transition: 0.2s;
+      flex-shrink: 0;
+    }
+    .wa-send-btn:hover {
+      background: #2ee672;
+    }
+
+    /* Modal for Quick Orders & Settings */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-content {
+      background: #12141d;
+      border: 1px solid var(--gold-500);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 32px;
+      position: relative;
+      box-shadow: 0 25px 70px rgba(0,0,0,0.9);
+      animation: modalSlide 0.25s ease-out;
+    }
+    @keyframes modalSlide {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.06);
+      border: none;
+      color: var(--text-muted);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .modal-close-btn:hover {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-visual {
+        order: -1;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .calc-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .purity-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 20px;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header .nav-menu {
+        display: none;
+      }
+      .header .nav-menu.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: #0a0c12;
+        border-bottom: 1px solid var(--gold-500);
+        padding: 24px;
+        gap: 18px;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .hero-title {
+        font-size: 34px;
+      }
+      .section-title {
+        font-size: 28px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .catalog-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-grid-3, .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .order-box {
+        padding: 24px 16px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .purity-grid {
+        grid-template-columns: 1fr;
+      }
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <nav class="wrap">
-    <a href="#top" class="logo">GHOUSE<span>·</span>RECORDS</a>
-    <div class="nav-right">
-      <div class="navlinks">
-        <a href="#booking">Book Studio</a>
-        <a href="#disco">Silent Disco</a>
-        <a href="#tickets">Tickets</a>
-        <a href="#gallery">Gallery</a>
-        <a class="ig" href="https://www.instagram.com/ghouserecordsug" target="_blank" rel="noopener">@ghouserecordsug</a>
+  <!-- ================= TOP TICKER & WHATSAPP CONFIG BAR ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="ticker-wrapper">
+        <span class="ticker-tag">Live Market</span>
+        <div class="ticker-item">
+          <span>Gold Spot (XAU/USD):</span>
+          <strong id="spot-price-display">$2,465.80/oz</strong>
+          <span class="ticker-val-up">+0.68% ▲</span>
+        </div>
+        <div class="ticker-item" style="opacity: 0.85;">
+          <span>24K Gram:</span>
+          <strong id="gram-24k-display">$79.28</strong>
+        </div>
       </div>
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle light / dark mode">
-        <span class="icon-sun" aria-hidden="true">☀</span>
-        <span class="icon-moon" aria-hidden="true">☾</span>
-      </button>
-    </div>
-  </nav>
-</header>
 
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="eq" id="eq" aria-hidden="true"></div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow">Kiwatule, Kampala <em>·</em> Recording Studio &amp; Label</p>
-      <h1>
-        <span class="line">BUILT TO</span>
-        <span class="line accented">RECORD.</span>
-      </h1>
-      <p class="hero-sub">Ghouse Records is a working recording studio in Kiwatule — tracking, mixing and mastering, day in and day out. Once a month, the same floor clears out for a silent disco night.</p>
-
-      <div class="hero-cta">
-        <a href="#booking" class="btn btn-solid">Book a session</a>
-        <a href="#disco" class="btn btn-ghost">Silent disco nights</a>
+      <div class="top-bar-right">
+        <a href="javascript:void(0)" onclick="openWhatsAppModal('General Gold Inquiries')" class="wa-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span id="wa-number-badge">+256 700 000 000</span>
+        </a>
+        <button class="settings-btn" onclick="openSettingsModal()" title="Customize Business WhatsApp Number">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          WhatsApp Settings
+        </button>
       </div>
     </div>
-  </section>
-
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track" id="marqueeTrack"></div>
   </div>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="wrap about-grid">
-      <div class="about-copy">
-        <p class="eyebrow" style="margin-bottom:18px;">The studio</p>
-        <p><strong>Ghouse Records started as a booth in Kiwatule</strong> built for artists who needed somewhere honest to record — no gatekeeping, no rush. Five years on it's a full studio, a small stable of signed acts, and a label that puts out what gets made here.</p>
-        <p>Most days, the room is booked for tracking, mixing and mastering. Once a month, on a Saturday, the gear gets cleared and the same floor turns into a silent disco — headsets on, one night, Kiwatule.</p>
-        <p>Sessions, nights, tickets — everything routes through this page.</p>
+  <!-- ================= NAVIGATION HEADER ================= -->
+  <header class="header" id="main-header">
+    <div class="container navbar">
+      <a href="#" class="logo-link">
+        <div class="logo-emblem">
+          <!-- Gold Ingot SVG Icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 17L6 7H18L21 17H3Z" stroke="#fcf6ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="url(#goldGradSmall)"/>
+            <path d="M6 7L9 17" stroke="#aa771c" stroke-width="1.5"/>
+            <path d="M18 7L15 17" stroke="#aa771c" stroke-width="1.5"/>
+            <defs>
+              <linearGradient id="goldGradSmall" x1="3" y1="7" x2="21" y2="17" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FCF6BA"/>
+                <stop offset="0.5" stop-color="#D4AF37"/>
+                <stop offset="1" stop-color="#8C6A18"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">T.J CONCEPTS</span>
+          <span class="logo-subtitle">Precious Metals &amp; Refining</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#calculator" class="nav-link">Gold Calculator</a></li>
+        <li><a href="#order-builder" class="nav-link">Order via WhatsApp</a></li>
+        <li><a href="#catalog" class="nav-link">Bullion &amp; Dore</a></li>
+        <li><a href="#purity" class="nav-link">Purity Chart</a></li>
+        <li><a href="#process" class="nav-link">How It Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button onclick="scrollToOrderSection('buy')" class="btn btn-gold">
+          <span>Trade Gold</span>
+        </button>
+        <button onclick="openWhatsAppModal('Instant Gold Quote Request')" class="btn btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>WhatsApp Us</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
-      <div class="stat-list">
-        <div class="stat"><span class="k">Based in</span><span class="v">Kiwatule</span></div>
-        <div class="stat"><span class="k">Running since</span><span class="v">2021</span></div>
-        <div class="stat"><span class="k">Studio bookings</span><span class="v">Daily</span></div>
-        <div class="stat"><span class="k">Silent disco</span><span class="v">Monthly</span></div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <div class="hero-glow-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+          </svg>
+          Certified Gold Traders &amp; Master Refiners
+        </div>
+        <h1 class="hero-title">
+          The Standard in Pure <span class="gold-text-glow">Gold Trading</span>, Precision <span class="gold-text">Refining</span> &amp; Mining.
+        </h1>
+        <p class="hero-desc">
+          T.J Concepts delivers institutional-grade precious metals solutions. We buy and sell investment bullion, provide 99.99% high-yield induction refining, and partner directly with ethical mining concessions across East Africa &amp; international markets.
+        </p>
+
+        <div class="hero-actions">
+          <button onclick="scrollToOrderSection('buy')" class="btn btn-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            Instant WhatsApp Order
+          </button>
+          <button onclick="scrollToOrderSection('sell')" class="btn btn-outline-gold">
+            <span>Sell Gold Scrap / Dore</span>
+          </button>
+          <button onclick="scrollToOrderSection('refining')" class="btn btn-outline-gold">
+            <span>Refining Quote</span>
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>99.99%</h3>
+            <p>Fine Purity Standard</p>
+          </div>
+          <div class="stat-item">
+            <h3>XRF &amp; Fire</h3>
+            <p>Lab-Grade Assaying</p>
+          </div>
+          <div class="stat-item">
+            <h3>Direct WhatsApp</h3>
+            <p>Instant Real-Time Orders</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Gold Bar 3D Card -->
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="bullion-3d-wrap">
+            <div class="gold-bar-graphic">
+              <span class="bar-stamp">T.J CONCEPTS</span>
+              <span class="bar-purity">FINE GOLD 999.9</span>
+              <span class="bar-serial">NET WT 1000g • ASSAYED</span>
+            </div>
+          </div>
+
+          <div class="visual-features">
+            <div class="v-feat">
+              <span class="v-feat-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:var(--gold-400)">
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+                Current Buyback Rate
+              </span>
+              <span class="v-feat-val">$78.80 / g (24K)</span>
+            </div>
+            <div class="v-feat">
+              <span class="v-feat-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:var(--accent-emerald)">
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+                Refinery Turnaround
+              </span>
+              <span class="v-feat-val">Same Day Assay &amp; Smelt</span>
+            </div>
+            <div class="v-feat">
+              <span class="v-feat-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:var(--whatsapp-green)">
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+                WhatsApp Desk
+              </span>
+              <span class="v-feat-val" style="color:var(--whatsapp-green)">Online &amp; Active</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- BOOKING -->
-  <section class="section booking" id="booking">
-    <div class="wrap booking-grid">
-      <div class="booking-copy">
-        <p class="eyebrow" style="margin-bottom:18px;">The main thing</p>
-        <h2 style="margin-bottom:20px;">Book a<br>Session</h2>
-        <p>The booth that started it all is still booked out most days. Recording, mixing, mastering or full-day rehearsal blocks — tell us what you need and a producer confirms your slot over WhatsApp.</p>
-        <div class="package-list">
-          <div class="package hl"><span class="p-name">Recording (2 hrs)</span><span class="p-rate">UGX 30,000</span></div>
-          <div class="package"><span class="p-name">Mixing (per track)</span><span class="p-rate">UGX 150,000</span></div>
-          <div class="package"><span class="p-name">Mastering (per track)</span><span class="p-rate">UGX 80,000</span></div>
-          <div class="package"><span class="p-name">Full day block (8hrs)</span><span class="p-rate">UGX 350,000</span></div>
-        </div>
+  <!-- ================= CORE SERVICES SECTION ================= -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">What We Do</span>
+        <h2 class="section-title">Comprehensive <span class="gold-text">Precious Metals</span> Expertise</h2>
+        <p class="section-desc">From raw ore extraction to investment-grade minted bars, T.J Concepts handles every link in the gold value chain with uncompromising integrity.</p>
       </div>
 
-      <form id="bookingForm">
-        <div class="form-row">
-          <div class="field">
-            <label for="b-name">Your name</label>
-            <input id="b-name" type="text" required placeholder="Full name">
+      <div class="services-grid">
+        <!-- Service 1: Buy & Sell Gold -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Gold Buying &amp; Selling</h3>
+            <p class="service-desc">
+              We facilitate large-scale and retail bullion transactions with tight spreads linked to international spot prices. Buy certified gold bars or monetize scrap gold with instant settlement.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Minted Bullion (1g to 1kg Kilobars)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Dore Bars &amp; Alluvial Nuggets Purchase
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Jewelry Scrap &amp; Estate Liquidation
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Instant Wire / Cash / Escrow Payouts
+              </li>
+            </ul>
           </div>
-          <div class="field">
-            <label for="b-phone">Phone / WhatsApp</label>
-            <input id="b-phone" type="tel" required placeholder="07XX XXX XXX">
+          <div class="service-card-footer">
+            <button onclick="scrollToOrderSection('buy')" class="btn btn-gold" style="width:100%">
+              Trade Gold on WhatsApp
+            </button>
           </div>
         </div>
-        <div class="form-row">
-          <div class="field">
-            <label for="b-date">Preferred date</label>
-            <input id="b-date" type="date" required>
+
+        <!-- Service 2: Gold Refining & Assaying -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Gold Refining &amp; Assaying</h3>
+            <p class="service-desc">
+              State-of-the-art chemical &amp; induction smelting facility delivering 999.9 fine purity. Advanced laboratory assaying with Thermo Niton XRF and traditional Fire Assay verification.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Aqua Regia &amp; Pyro Refining (99.99%)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Non-Destructive Spectrometer XRF Testing
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Certified Assaying Certificates &amp; Hallmark
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Custom Casting &amp; Ingot Production
+              </li>
+            </ul>
           </div>
-          <div class="field">
-            <label for="b-time">Preferred time</label>
-            <input id="b-time" type="time" required>
+          <div class="service-card-footer">
+            <button onclick="scrollToOrderSection('refining')" class="btn btn-gold" style="width:100%">
+              Request Refining Batch
+            </button>
           </div>
         </div>
-        <div class="form-row">
-          <div class="field">
-            <label for="b-package">Session type</label>
-            <select id="b-package">
-              <option>Recording</option>
-              <option>Mixing</option>
-              <option>Mastering</option>
-              <option>Full day block</option>
-              <option>Rehearsal space</option>
+
+        <!-- Service 3: Gold Mining & Concession Sourcing -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M12 18v-6"></path>
+                <path d="M9 15l3 3 3-3"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Gold Mining &amp; Sourcing</h3>
+            <p class="service-desc">
+              Direct involvement in artisanal and industrial gold exploration, responsible mine-site procurement, ore processing equipment, and full OECD-compliant supply chain custody.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Ethical Concession Partnerships
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Alluvial &amp; Hard-Rock Ore Processing
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Mine-Gate Off-take Agreements
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Logistics, Security &amp; Export Documentation
+              </li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <button onclick="scrollToOrderSection('mining')" class="btn btn-gold" style="width:100%">
+              Inquire Mining Solutions
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE GOLD CALCULATOR & RATES ================= -->
+  <section class="calc-section" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Instant Gold Valuation</span>
+        <h2 class="section-title">Live Gold Price <span class="gold-text">Calculator</span></h2>
+        <p class="section-desc">Estimate the exact purchase or buyback value for any quantity of gold based on current market spot rates. Click to lock in your order directly on WhatsApp.</p>
+      </div>
+
+      <div class="calc-card-grid">
+        <!-- Calculator Inputs -->
+        <div class="calc-left">
+          <h3>Configure Valuation</h3>
+          <p>Select your transaction type, purity karat, and weight to generate an estimated price quote.</p>
+
+          <div class="form-group">
+            <label class="form-label">Transaction Mode</label>
+            <div class="pill-group" id="calc-mode-group">
+              <div class="pill-opt active" onclick="setCalcMode('buy', this)">I Want to Buy</div>
+              <div class="pill-opt" onclick="setCalcMode('sell', this)">I Want to Sell</div>
+              <div class="pill-opt" onclick="setCalcMode('refine', this)">Refining Fee</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Gold Purity / Karat</label>
+            <select class="custom-select" id="calc-karat" onchange="recalculateGold()">
+              <option value="24" selected>24 Karat (99.99% Fine Gold)</option>
+              <option value="22">22 Karat (91.6% Jewelry / Coin)</option>
+              <option value="21">21 Karat (87.5% Middle East Standard)</option>
+              <option value="18">18 Karat (75.0% Standard Jewelry)</option>
+              <option value="14">14 Karat (58.5% Commercial Gold)</option>
+              <option value="10">10 Karat (41.7% Low Karat Gold)</option>
+              <option value="raw">Raw Unrefined Dore (~85% Avg Est.)</option>
             </select>
           </div>
-          <div class="field">
-            <label for="b-artists">Number of artists</label>
-            <input id="b-artists" type="number" min="1" value="1">
+
+          <div class="input-row form-group">
+            <div style="flex: 1.5;">
+              <label class="form-label">Weight Quantity</label>
+              <input type="number" id="calc-weight" class="custom-input" value="50" min="0.1" step="0.1" oninput="recalculateGold()" placeholder="e.g. 50">
+            </div>
+            <div style="flex: 1;">
+              <label class="form-label">Unit</label>
+              <select class="custom-select" id="calc-unit" onchange="recalculateGold()">
+                <option value="grams" selected>Grams (g)</option>
+                <option value="oz">Troy Ounces (oz)</option>
+                <option value="kg">Kilograms (kg)</option>
+                <option value="tola">Tolas (11.66g)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Currency Display</label>
+            <select class="custom-select" id="calc-currency" onchange="recalculateGold()">
+              <option value="USD" selected>USD ($) - US Dollars</option>
+              <option value="UGX">UGX (USh) - Uganda Shillings</option>
+              <option value="EUR">EUR (€) - Euros</option>
+              <option value="AED">AED (د.إ) - UAE Dirham</option>
+              <option value="GBP">GBP (£) - British Pounds</option>
+            </select>
           </div>
         </div>
-        <div class="field">
-          <label for="b-notes">Anything the producer should know</label>
-          <textarea id="b-notes" placeholder="Genre, reference tracks, engineer preference…"></textarea>
+
+        <!-- Calculator Result & Direct WhatsApp Action -->
+        <div class="calc-right">
+          <div>
+            <div class="calc-summary-title">ESTIMATED VALUATION BREAKDOWN</div>
+            <div class="calc-breakdown">
+              <div class="breakdown-row">
+                <span class="text-muted">Operation:</span>
+                <span id="breakdown-op" style="font-weight:600; color:#fff;">Buy Gold Bullion</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="text-muted">Total Net Weight:</span>
+                <span id="breakdown-weight" style="font-weight:600; color:#fff;">50.00 Grams</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="text-muted">Estimated Pure Gold (Fine):</span>
+                <span id="breakdown-pure" style="font-weight:600; color:#fff;">49.95 g (99.9%)</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="text-muted">Spot Benchmark Rate:</span>
+                <span id="breakdown-rate" style="font-weight:600; color:#fff;">$79.28 / gram</span>
+              </div>
+              <div class="breakdown-row total-row">
+                <span>ESTIMATED TOTAL:</span>
+                <span class="grand-total-val" id="calc-total-val">$3,964.00</span>
+              </div>
+            </div>
+
+            <div class="calc-wa-preview">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Clicking below opens WhatsApp with this exact order details pre-filled. No hassle!</span>
+            </div>
+          </div>
+
+          <button onclick="sendCalculatedOrderWhatsApp()" class="btn btn-wa" style="width:100%; padding:14px; font-size:15px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Lock Price &amp; Order on WhatsApp
+          </button>
         </div>
-        <div class="submit-row">
-          <button type="submit" class="btn btn-solid" style="border:none;">Send booking request →</button>
-          <span class="form-note">Opens WhatsApp with your details pre-filled.<br>A producer confirms the slot within a day.</span>
+      </div>
+
+      <!-- Live Reference Table for Karats -->
+      <div class="rates-box">
+        <div class="rates-header">
+          <div>
+            <h4 style="font-size: 16px; color:#fff; margin-bottom:4px;">Indicative Live Spot Rates Matrix</h4>
+            <p style="font-size: 12px; color:var(--text-muted);">Updated continuously with international bullion markets. All rates in USD.</p>
+          </div>
+          <span class="ticker-tag" style="background:rgba(16,185,129,0.15); border-color:#10b981; color:#34d399;">
+            ● Live Market Open
+          </span>
         </div>
-      </form>
+
+        <div class="rates-table-wrap">
+          <table class="rates-table">
+            <thead>
+              <tr>
+                <th>Purity Grade</th>
+                <th>Fineness</th>
+                <th>Buy Rate (Per Gram)</th>
+                <th>Sell / Payout (Per Gram)</th>
+                <th>100g Cast Bar Est.</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>24K Fine Gold</strong></td>
+                <td>999.9 / 99.99%</td>
+                <td>$79.28</td>
+                <td>$78.60</td>
+                <td>$7,928.00</td>
+                <td>
+                  <button class="trade-btn-sm" onclick="quickTradeKarat('24K', 'Buy', 79.28)">
+                    Order 24K
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>22K Crown Gold</strong></td>
+                <td>916.0 / 91.60%</td>
+                <td>$72.62</td>
+                <td>$71.95</td>
+                <td>$7,262.00</td>
+                <td>
+                  <button class="trade-btn-sm" onclick="quickTradeKarat('22K', 'Buy', 72.62)">
+                    Order 22K
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>18K Fine Jewelry</strong></td>
+                <td>750.0 / 75.00%</td>
+                <td>$59.46</td>
+                <td>$58.80</td>
+                <td>$5,946.00</td>
+                <td>
+                  <button class="trade-btn-sm" onclick="quickTradeKarat('18K', 'Sell', 58.80)">
+                    Trade 18K
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>14K Commercial Gold</strong></td>
+                <td>585.0 / 58.50%</td>
+                <td>$46.38</td>
+                <td>$45.70</td>
+                <td>$4,638.00</td>
+                <td>
+                  <button class="trade-btn-sm" onclick="quickTradeKarat('14K', 'Sell', 45.70)">
+                    Trade 14K
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Raw Dore Gold Ore</strong></td>
+                <td>Variable (Assayed)</td>
+                <td>Assay-Based</td>
+                <td>Market Net Less Refining</td>
+                <td>Custom Batch</td>
+                <td>
+                  <button class="trade-btn-sm" onclick="openWhatsAppModal('Raw Gold Dore Smelting Quote')">
+                    Assay Dore
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SILENT DISCO -->
-  <section class="section" id="disco">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Once a month</p>
-        <h2>Silent Disco Night</h2>
-        <p>One Saturday a month, the studio floor clears and the headsets come out. Same room, different rules — quiet outside, loud inside.</p>
+  <!-- ================= COMPREHENSIVE WHATSAPP ORDER BUILDER ================= -->
+  <section class="order-builder-section" id="order-builder">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Fast &amp; Direct WhatsApp Booking</span>
+        <h2 class="section-title">Order &amp; Inquire via <span style="color:var(--whatsapp-green);">WhatsApp</span></h2>
+        <p class="section-desc">Fill out your specific requirements below. Our automated generator formats a structured dispatch message to our chief gold desk for rapid response.</p>
       </div>
 
-      <div class="disco-list" id="discoList">
-        <div class="disco-row">
-          <div class="disco-date"><span class="dd">SAT</span><span class="dm">AUG 30</span></div>
-          <div class="disco-info">
-            <h3>Silent Disco Night</h3>
-            <p>Ghouse Records Studio, Kiwatule · Doors 8PM</p>
+      <div class="order-box">
+        <!-- Tabs -->
+        <div class="order-tabs">
+          <div class="order-tab active" onclick="setOrderTab('buy', this)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            1. Buy Gold Bullion
           </div>
-          <div class="disco-price">UGX 30,000</div>
-          <a class="rsvp" href="#" data-event="Silent Disco Night (Sat 30 Aug)">RSVP →</a>
-        </div>
-        <div class="disco-row">
-          <div class="disco-date"><span class="dd">SAT</span><span class="dm">SEP 27</span></div>
-          <div class="disco-info">
-            <h3>Silent Disco Night</h3>
-            <p>Ghouse Records Studio, Kiwatule · Doors 8PM</p>
+          <div class="order-tab" onclick="setOrderTab('sell', this)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            2. Sell Gold Scrap / Dore
           </div>
-          <div class="disco-price">UGX 30,000</div>
-          <a class="rsvp" href="#" data-event="Silent Disco Night (Sat 27 Sep)">RSVP →</a>
-        </div>
-        <div class="disco-row">
-          <div class="disco-date"><span class="dd">SAT</span><span class="dm">OCT 25</span></div>
-          <div class="disco-info">
-            <h3>Silent Disco Night</h3>
-            <p>Ghouse Records Studio, Kiwatule · Doors 8PM</p>
+          <div class="order-tab" onclick="setOrderTab('refining', this)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            3. Gold Refining &amp; Smelting
           </div>
-          <div class="disco-price">UGX 30,000</div>
-          <a class="rsvp" href="#" data-event="Silent Disco Night (Sat 25 Oct)">RSVP →</a>
+          <div class="order-tab" onclick="setOrderTab('mining', this)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+            4. Mining &amp; Off-Take
+          </div>
         </div>
+
+        <form id="order-builder-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label">Product / Service Selection</label>
+              <select class="custom-select" id="ob-product" onchange="updateMessagePreview()">
+                <option value="999.9 Investment Kilobar (1000g)">999.9 Investment Kilobar (1000g)</option>
+                <option value="100g Minted Gold Bar">100g Minted Gold Bar</option>
+                <option value="50g Fine Gold Cast Ingot">50g Fine Gold Cast Ingot</option>
+                <option value="1 Troy Ounce Gold Bar/Coin">1 Troy Ounce Gold Bar/Coin</option>
+                <option value="Custom Quantity Bullion">Custom Quantity Bullion</option>
+                <option value="Raw Unrefined Dore Bars">Raw Unrefined Dore Bars</option>
+                <option value="Gold Scrap / Jewelry Recycling">Gold Scrap / Jewelry Recycling</option>
+                <option value="Full Batch Induction Refining">Full Batch Induction Refining</option>
+                <option value="Mining Concession Partnership">Mining Concession Partnership</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Approximate Weight</label>
+              <input type="text" class="custom-input" id="ob-weight" value="100 Grams" placeholder="e.g. 250g or 2kg" oninput="updateMessagePreview()">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Purity / Karat</label>
+              <select class="custom-select" id="ob-karat" onchange="updateMessagePreview()">
+                <option value="24K (99.99% Pure)">24K (99.99% Pure)</option>
+                <option value="22K (91.6% Fine)">22K (91.6% Fine)</option>
+                <option value="18K (75.0% Fine)">18K (75.0% Fine)</option>
+                <option value="Raw / Unrefined Ore">Raw / Unrefined Ore</option>
+                <option value="Mixed Scrap (To be assayed)">Mixed Scrap (To be assayed)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label">Your Name / Company</label>
+              <input type="text" class="custom-input" id="ob-name" placeholder="e.g. Alex Morgan / Apex Minerals" oninput="updateMessagePreview()">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Your Location / Country</label>
+              <input type="text" class="custom-input" id="ob-location" placeholder="e.g. Kampala, Uganda / Dubai / London" oninput="updateMessagePreview()">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Settlement / Delivery</label>
+              <select class="custom-select" id="ob-settlement" onchange="updateMessagePreview()">
+                <option value="Direct Physical Delivery / Pick-up">Direct Physical Pick-up at Refinery</option>
+                <option value="Insured Armored Courier">Insured Armored Courier</option>
+                <option value="Bank Wire / Swift Transfer">Bank Wire / SWIFT Transfer</option>
+                <option value="Instant Cash Settlement">Instant Cash Settlement</option>
+                <option value="International Export CIF">International Export (CIF/FOB)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Additional Instructions / Batch Details</label>
+            <textarea class="custom-textarea" id="ob-notes" rows="2" placeholder="e.g. Need fire assay certification; ready for immediate transaction." oninput="updateMessagePreview()"></textarea>
+          </div>
+
+          <!-- Live WhatsApp Message Preview -->
+          <div class="live-msg-preview-box">
+            <div class="live-msg-header">
+              <span>💬 Live WhatsApp Message Preview</span>
+              <span id="target-phone-tag">Sending to: +256 700 000 000</span>
+            </div>
+            <div class="live-msg-text" id="ob-preview-text">
+👑 *T.J CONCEPTS - PRECIOUS METALS DISPATCH* 👑
+-------------------------------------------
+📌 *Service:* Buy Gold Bullion
+📦 *Product:* 100g Minted Gold Bar
+⚖️ *Weight:* 100 Grams
+✨ *Purity:* 24K (99.99% Pure)
+👤 *Client:* Valued Client
+📍 *Location:* Kampala, Uganda
+💼 *Settlement:* Direct Physical Pick-up at Refinery
+📝 *Notes:* Ready for immediate transaction.
+-------------------------------------------
+_Sent via TJ Concepts Online Portal_
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 16px; flex-wrap: wrap;">
+            <button type="button" onclick="resetOrderForm()" class="btn btn-outline-gold">
+              Reset Form
+            </button>
+            <button type="submit" class="btn btn-wa" style="font-size:16px; padding:14px 32px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Transmit Order to WhatsApp</span>
+            </button>
+          </div>
+        </form>
       </div>
-      <p class="disco-note">Held the last Saturday of every month. Dates confirmed on Instagram closer to the night.</p>
     </div>
   </section>
 
-  <!-- TICKETING -->
-  <section class="section" id="tickets">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">For the next disco night</p>
-        <h2>Get Tickets</h2>
-        <p>Pick a tier, choose your headcount, and check out over WhatsApp or MTN MoMo. Your reference code is your ticket at the door.</p>
+  <!-- ================= PRODUCT & SERVICE SHOWCASE CATALOG ================= -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Catalog &amp; Offerings</span>
+        <h2 class="section-title">Precious Metals <span class="gold-text">Inventory &amp; Operations</span></h2>
+        <p class="section-desc">Explore our standard refined gold products, raw unrefined batches, and specialized metallurgical refinery packages.</p>
       </div>
 
-      <div class="tiers" id="tiersGrid">
-        <div class="tier" data-tier="General" data-price="30000">
-          <span class="tier-name">General Floor</span>
-          <span class="tier-price">30k<sup>UGX</sup></span>
-          <ul>
-            <li>Entry + wireless headset</li>
-            <li>Full night access</li>
-            <li>Standing floor</li>
+      <!-- Catalog Filters -->
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterCatalog('all', this)">All Products</button>
+        <button class="filter-btn" onclick="filterCatalog('bullion', this)">Refined Bullion</button>
+        <button class="filter-btn" onclick="filterCatalog('dore', this)">Raw Dore &amp; Ore</button>
+        <button class="filter-btn" onclick="filterCatalog('refining', this)">Refining Services</button>
+        <button class="filter-btn" onclick="filterCatalog('mining', this)">Mining Solutions</button>
+      </div>
+
+      <!-- Catalog Grid -->
+      <div class="catalog-grid" id="catalog-items-grid">
+        <!-- Item 1: 1kg Kilobar -->
+        <div class="product-card" data-cat="bullion">
+          <div class="product-thumb">
+            <span class="product-badge">999.9 Fine</span>
+            <!-- Bullion SVG -->
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none">
+              <path d="M4 18L7 6H17L20 18H4Z" stroke="#fcf6ba" stroke-width="1.5" fill="url(#pGrad1)"/>
+              <path d="M7 6L9 18M17 6L15 18" stroke="#aa771c" stroke-width="1"/>
+              <text x="12" y="13" font-size="3.5" fill="#4a3407" font-weight="bold" text-anchor="middle">1000g</text>
+              <defs>
+                <linearGradient id="pGrad1" x1="4" y1="6" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fff2a3"/><stop offset="0.5" stop-color="#d4af37"/><stop offset="1" stop-color="#8c6a18"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">1 KG Fine Gold Kilobar</h4>
+              <div class="product-specs">
+                <span>• Purity: 99.99% (24 Karat)</span>
+                <span>• Packaging: Tamper-evident Assay Card</span>
+                <span>• Certification: Serialized Certificate</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Live Price</span>
+                <span class="p-price">Spot Linked</span>
+              </div>
+              <button onclick="orderProductWhatsApp('1 KG Fine Gold Kilobar', '1000g', '24K (99.99%)')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Order on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: 100g Minted Bar -->
+        <div class="product-card" data-cat="bullion">
+          <div class="product-thumb">
+            <span class="product-badge">Best Seller</span>
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="4" width="14" height="16" rx="2" stroke="#fcf6ba" stroke-width="1.5" fill="url(#pGrad2)"/>
+              <text x="12" y="11" font-size="3" fill="#4a3407" font-weight="bold" text-anchor="middle">T.J CONCEPTS</text>
+              <text x="12" y="15" font-size="2.5" fill="#4a3407" text-anchor="middle">100g • 999.9</text>
+              <defs>
+                <linearGradient id="pGrad2" x1="5" y1="4" x2="19" y2="20" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fff2a3"/><stop offset="0.5" stop-color="#d4af37"/><stop offset="1" stop-color="#8c6a18"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">100g Minted Gold Bar</h4>
+              <div class="product-specs">
+                <span>• Purity: 99.99% Fine Gold</span>
+                <span>• Finish: Mirror Proof with Hallmarks</span>
+                <span>• Ideal: Private Wealth Investment</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Live Price</span>
+                <span class="p-price">Spot Linked</span>
+              </div>
+              <button onclick="orderProductWhatsApp('100g Minted Gold Bar', '100g', '24K (99.99%)')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Order on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Raw Dore Gold Bars -->
+        <div class="product-card" data-cat="dore">
+          <div class="product-thumb">
+            <span class="product-badge" style="border-color:#eab308; color:#fef08a;">Unrefined Dore</span>
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
+              <path d="M3 15L7 7L18 8L21 16L12 19L3 15Z" stroke="#fef08a" stroke-width="1.5" fill="url(#pGradDore)"/>
+              <defs>
+                <linearGradient id="pGradDore" x1="3" y1="7" x2="21" y2="19" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#eab308"/><stop offset="0.6" stop-color="#854d0e"/><stop offset="1" stop-color="#451a03"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">Raw Dore Bars / Alluvial</h4>
+              <div class="product-specs">
+                <span>• Purity: 82% - 94% Natural Karat</span>
+                <span>• Direct: Sourced from Licensed Mines</span>
+                <span>• Minimum: 500g Batch Available</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Wholesale</span>
+                <span class="p-price">Assayed Net</span>
+              </div>
+              <button onclick="orderProductWhatsApp('Raw Dore Bars Batch', '500g+', 'Raw / Unrefined')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Order on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Induction Smelting & Chemical Refining -->
+        <div class="product-card" data-cat="refining">
+          <div class="product-thumb">
+            <span class="product-badge" style="border-color:#38bdf8; color:#bae6fd;">Refining Service</span>
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.5">
+              <path d="M12 2v6m0 8v6M4.93 4.93l4.24 4.24m5.66 5.66l4.24 4.24M2 12h6m8 0h6M4.93 19.07l4.24-4.24m5.66-5.66l4.24-4.24"/>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">Aqua Regia Chemical Refining</h4>
+              <div class="product-specs">
+                <span>• Output: 999.9 Fine Certified Gold</span>
+                <span>• Capacity: 50kg+ per batch</span>
+                <span>• Speed: Same-Day / 24-hr Turnaround</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Refining Fee</span>
+                <span class="p-price">Competitive %</span>
+              </div>
+              <button onclick="orderProductWhatsApp('Refinery Batch Smelting Package', 'Custom Weight', 'Refining to 999.9')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Book on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: 1 Troy Ounce Investment Bar -->
+        <div class="product-card" data-cat="bullion">
+          <div class="product-thumb">
+            <span class="product-badge">1 oz (31.1g)</span>
+            <svg width="65" height="65" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="#fcf6ba" stroke-width="1.5" fill="url(#pGradCoin)"/>
+              <text x="12" y="13" font-size="3" fill="#4a3407" font-weight="bold" text-anchor="middle">1 OZ</text>
+              <defs>
+                <linearGradient id="pGradCoin" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fff2a3"/><stop offset="0.5" stop-color="#d4af37"/><stop offset="1" stop-color="#8c6a18"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">1 Troy Ounce 999.9 Fine Gold</h4>
+              <div class="product-specs">
+                <span>• Weight: 31.1035 Grams</span>
+                <span>• Form: Minted Coin / Ingot</span>
+                <span>• Liquidity: Globally Recognized</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Live Price</span>
+                <span class="p-price">Spot Linked</span>
+              </div>
+              <button onclick="orderProductWhatsApp('1 Troy Ounce Gold Ingot', '31.1g', '24K (99.99%)')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Order on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Scrap Gold Buyback Program -->
+        <div class="product-card" data-cat="dore">
+          <div class="product-thumb">
+            <span class="product-badge" style="border-color:#22c55e; color:#86efac;">Immediate Cash</span>
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="1.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">Jewelry Scrap &amp; Dental Gold</h4>
+              <div class="product-specs">
+                <span>• All Karats Accepted: 9K to 22K</span>
+                <span>• XRF Spectrometer Assaying on the spot</span>
+                <span>• No Melting Losses Deducted</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Payout Rate</span>
+                <span class="p-price">Up to 98% Spot</span>
+              </div>
+              <button onclick="orderProductWhatsApp('Sell Scrap Gold / Old Jewelry', 'Variable', 'Scrap All Karats')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Sell via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Mine-Site Mineral Processing & Equipment -->
+        <div class="product-card" data-cat="mining">
+          <div class="product-thumb">
+            <span class="product-badge" style="border-color:#f97316; color:#fdba74;">Mining Hub</span>
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">Mining Off-take &amp; Support</h4>
+              <div class="product-specs">
+                <span>• Long-term ore purchasing agreements</span>
+                <span>• Gravity separation &amp; smelter access</span>
+                <span>• Full OECD compliance verification</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Partnership</span>
+                <span class="p-price">Off-take Deals</span>
+              </div>
+              <button onclick="orderProductWhatsApp('Mining Concession Off-take Partnership', 'Bulk Ore', 'Concession Deal')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Partner via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Fire Assay Laboratory Testing -->
+        <div class="product-card" data-cat="refining">
+          <div class="product-thumb">
+            <span class="product-badge" style="border-color:#a855f7; color:#e9d5ff;">Lab Certified</span>
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div>
+              <h4 class="product-title">Certified Fire Assay &amp; XRF</h4>
+              <div class="product-specs">
+                <span>• Accuracy up to 0.01% (99.99)</span>
+                <span>• Dual verification (Chemical + XRF)</span>
+                <span>• Official Certificate for Customs/Export</span>
+              </div>
+            </div>
+            <div>
+              <div class="product-price-box">
+                <span class="p-price-label">Assay Service</span>
+                <span class="p-price">Per Sample</span>
+              </div>
+              <button onclick="orderProductWhatsApp('Fire Assay Lab Certification', 'Sample', 'Assay Testing')" class="btn btn-wa" style="width:100%; padding:9px;">
+                Book Assay on WA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PURITY & KARAT REFERENCE GUIDE ================= -->
+  <section class="purity-section" id="purity">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Assaying Standards</span>
+        <h2 class="section-title">Gold Karat &amp; <span class="gold-text">Purity Standard Guide</span></h2>
+        <p class="section-desc">Understand how gold is graded, tested, and valued at T.J Concepts. We guarantee transparent and certified purity on every gram.</p>
+      </div>
+
+      <div class="purity-grid">
+        <div class="purity-card">
+          <div class="purity-karat">24K</div>
+          <div class="purity-pct">99.99% Fineness (999.9)</div>
+          <p class="purity-desc">Pure Investment Gold. Free from other base metals. Soft, rich golden luster. Standard for central banks, international kilobars, and investment bullion.</p>
+        </div>
+
+        <div class="purity-card">
+          <div class="purity-karat">22K</div>
+          <div class="purity-pct">91.67% Fineness (916)</div>
+          <p class="purity-desc">Crown Gold standard. Alloyed with silver and copper for durability. Standard for sovereign coins, traditional high-grade jewelry in the Middle East &amp; Asia.</p>
+        </div>
+
+        <div class="purity-card">
+          <div class="purity-karat">18K</div>
+          <div class="purity-pct">75.00% Fineness (750)</div>
+          <p class="purity-desc">Luxury Jewelry Standard. Perfect balance of rich gold color and structural strength for diamonds and gems. Yellow, Rose, and White gold varieties.</p>
+        </div>
+
+        <div class="purity-card">
+          <div class="purity-karat">14K</div>
+          <div class="purity-pct">58.33% Fineness (585)</div>
+          <p class="purity-desc">Commercial jewelry standard. High durability and scratch resistance for everyday wearable rings and chains. Readily recycled and refined at our plant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4-STEP PROCESS ================= -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Seamless Workflow</span>
+        <h2 class="section-title">How To Trade &amp; Refine In <span class="gold-text">4 Simple Steps</span></h2>
+        <p class="section-desc">A frictionless, transparent, and legally safeguarded procedure from initial WhatsApp inquiry to final settlement.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Inquire via WhatsApp</h3>
+          <p class="step-desc">Use our online order builder or floating WhatsApp button to specify whether you want to Buy, Sell, Refine, or Partner in Mining.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Assay &amp; Verification</h3>
+          <p class="step-desc">Bring or ship your gold to our secure facility for instant non-destructive XRF spectrometry and precision fire assay testing.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Spot-Locked Valuation</h3>
+          <p class="step-desc">We lock in the highest real-time market spot rate with complete transparency and zero hidden deductions or surprise fees.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Instant Settlement / Delivery</h3>
+          <p class="step-desc">Receive immediate payment via bank transfer/cash, or collect your 999.9 certified refined minted bars with full documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST, COMPLIANCE & SECURITY HIGHLIGHTS ================= -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>OECD Due Diligence</h4>
+            <p>100% conflict-free, ethically sourced gold with verifiable trace origins.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Vault-Secured Logistics</h4>
+            <p>Armored transit and comprehensive transit insurance on all precious shipments.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V8"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Max Liquidity Payouts</h4>
+            <p>Same-day liquid capital execution for high-volume transactions up to multi-kilos.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Dual Assay Guarantee</h4>
+            <p>Both chemical fire assay and spectrometer validation for zero disputes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQS SECTION ================= -->
+  <section class="faq-section" id="faqs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Frequently Asked Questions</span>
+        <h2 class="section-title">Everything You Need To Know About <span class="gold-text">Trading With Us</span></h2>
+        <p class="section-desc">Got questions about gold testing, minimum quantities, or WhatsApp orders? Here are the most common inquiries.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>How does WhatsApp ordering work at T.J Concepts?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-answer">
+            When you select your desired service or calculate a quote on our site, clicking "Send to WhatsApp" pre-formats all your specifications (weight, purity karat, preferred settlement) into a concise message. Our chief bullion officer responds immediately to confirm current live pricing and arrange delivery or assaying.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>What is the minimum quantity of gold I can buy or sell?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-answer">
+            For retail customers, we buy and sell from as little as 10 grams (or 1 Troy Ounce). For refining batches, our induction smelters efficiently process batches starting at 100 grams up to industrial lots exceeding 50 kilograms.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>How do you determine the purity and valuation of scrap gold?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-answer">
+            We use laboratory-grade Thermo Scientific X-ray Fluorescence (XRF) spectrometers to determine elemental composition to 0.01% accuracy without damaging your item. For larger melted bars, we conduct certified fire assaying (cupellation). Payouts are benchmarked directly against the international LBMA spot price.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>Do you provide export permits and international delivery?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-answer">
+            Yes. T.J Concepts is fully licensed to prepare all government royalties, mineral export documentation, customs clearance, and insured armored freight (Brink's, Malca-Amit, Ferrari) to major gold hubs including Dubai (DMCC), Zurich, London, and Antwerp.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>What documents are required to trade or sell gold?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-answer">
+            In compliance with Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations, individual sellers need a valid government ID or Passport. Mining cooperatives and corporate entities must provide mineral dealer licenses, origin declarations, and company registration certificates.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>How long does the gold refining process take?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-answer">
+            Standard induction smelting and XRF assay takes under 45 minutes for batches up to 5kg. Full chemical Aqua Regia refining to 999.9 fine gold is typically completed same-day or within 24 hours depending on batch size.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & PHYSICAL HUB ================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="section-subtitle">Get In Touch</span>
+          <h3 style="font-size: 28px; color:#fff; margin-bottom:12px;">Direct Precious Metals Desk</h3>
+          <p style="font-size: 14px; color:var(--text-muted); margin-bottom:24px;">
+            Have questions regarding wholesale bullion orders, commercial refining, or concession partnerships? Contact our executives directly via WhatsApp, phone, or visit our high-security assay laboratory.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="c-info-item">
+              <div class="c-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
+              <div class="c-info-text">
+                <h4>WhatsApp Direct Order Line</h4>
+                <p><a href="javascript:void(0)" onclick="openWhatsAppModal('Direct Inquiry from Contact Section')" id="wa-display-link" style="color:var(--whatsapp-green); font-weight:600;">+256 700 000 000 (Click to Chat)</a></p>
+              </div>
+            </div>
+
+            <div class="c-info-item">
+              <div class="c-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="c-info-text">
+                <h4>Corporate Email</h4>
+                <p><a href="mailto:info@tjconcepts-gold.com">orders@tjconcepts-gold.com</a></p>
+              </div>
+            </div>
+
+            <div class="c-info-item">
+              <div class="c-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="c-info-text">
+                <h4>Refinery &amp; Trading Headquarters</h4>
+                <p>Plot 14, Precious Metals Commercial District, Kampala, Uganda</p>
+                <p style="font-size:11px; color:var(--text-dim);">Private Security Access • VIP Escorted Vaulting</p>
+              </div>
+            </div>
+
+            <div class="c-info-item">
+              <div class="c-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="c-info-text">
+                <h4>Trading &amp; Smelting Hours</h4>
+                <p>Monday - Friday: 08:00 AM - 06:30 PM (EAT)</p>
+                <p>Saturday: 09:00 AM - 03:00 PM | WhatsApp 24/7 Response</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick VIP Inquiry Form -->
+        <div class="contact-card">
+          <h3 style="font-size: 22px; color:#fff; margin-bottom:8px;">Schedule an Assaying Appointment</h3>
+          <p style="font-size: 13px; color:var(--text-muted); margin-bottom:20px;">Book a private viewing or refinery batch processing session with our master metallurgist.</p>
+
+          <form onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="custom-input" id="cf-name" placeholder="Your full legal or corporate name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number / WhatsApp</label>
+              <input type="tel" class="custom-input" id="cf-phone" placeholder="+256 ... or international format" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Service of Interest</label>
+              <select class="custom-select" id="cf-service">
+                <option value="Buy Investment Gold">Buy Investment Gold Bullion</option>
+                <option value="Sell Scrap or Dore">Sell Raw Dore / Scrap Gold</option>
+                <option value="Gold Smelting & Refining">Gold Smelting &amp; Induction Refining</option>
+                <option value="Mining Concession Sourcing">Mining Concession Sourcing &amp; Off-Take</option>
+                <option value="Fire Assay & Hallmarking">Laboratory Fire Assay &amp; Certification</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Estimated Quantity &amp; Message</label>
+              <textarea class="custom-textarea" id="cf-msg" rows="3" placeholder="Specify estimated quantity in grams/kg and preferred date."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%; padding:13px;">
+              Submit &amp; Open in WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-link" style="margin-bottom:16px;">
+            <div class="logo-emblem">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M3 17L6 7H18L21 17H3Z" stroke="#fcf6ba" stroke-width="2" fill="#d4af37"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">T.J CONCEPTS</span>
+              <span class="logo-subtitle">Precious Metals &amp; Refining</span>
+            </div>
+          </div>
+          <p style="font-size: 13px; line-height: 1.7; color:var(--text-muted); margin-bottom:18px;">
+            T.J Concepts is a premier gold trading, assaying, high-yield refining, and mining solutions enterprise committed to unparalleled purity, absolute transparency, and responsible sourcing.
+          </p>
+          <div style="display:flex; gap:10px;">
+            <button onclick="openWhatsAppModal('General Support Chat')" class="btn btn-wa" style="padding:7px 14px; font-size:12px;">
+              WhatsApp Desk
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Gold Buying &amp; Selling</a></li>
+            <li><a href="#services">Certified 999.9 Gold Refining</a></li>
+            <li><a href="#services">Mine-Gate Sourcing &amp; Off-take</a></li>
+            <li><a href="#calculator">Live Price Calculator</a></li>
+            <li><a href="#catalog">Minted Kilobars &amp; Ingots</a></li>
+            <li><a href="#purity">Fire Assay &amp; XRF Analysis</a></li>
           </ul>
-          <div class="stepper">
-            <button type="button" class="qty-minus">−</button>
-            <span class="qty">1</span>
-            <button type="button" class="qty-plus">+</button>
-          </div>
-          <button class="tier-btn" type="button">Add to order</button>
         </div>
 
-        <div class="tier featured" data-tier="VIP Booth" data-price="70000">
-          <span class="tier-name">VIP Booth</span>
-          <span class="tier-price">70k<sup>UGX</sup></span>
-          <ul>
-            <li>Reserved VIP booth</li>
-            <li>Priority headset</li>
-            <li>2 house drinks included</li>
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#order-builder">WhatsApp Order Desk</a></li>
+            <li><a href="#catalog">Gold Product Catalog</a></li>
+            <li><a href="#process">4-Step Trading Workflow</a></li>
+            <li><a href="#faqs">Frequently Asked Questions</a></li>
+            <li><a href="#contact">Contact &amp; Vault Location</a></li>
           </ul>
-          <div class="stepper">
-            <button type="button" class="qty-minus">−</button>
-            <span class="qty">1</span>
-            <button type="button" class="qty-plus">+</button>
-          </div>
-          <button class="tier-btn" type="button">Add to order</button>
         </div>
 
-        <div class="tier" data-tier="Group of 5" data-price="130000">
-          <span class="tier-name">Group of 5</span>
-          <span class="tier-price">130k<sup>UGX</sup></span>
-          <ul>
-            <li>5 general floor entries</li>
-            <li>5 headsets included</li>
-            <li>Best for crews &amp; label fam</li>
-          </ul>
-          <div class="stepper">
-            <button type="button" class="qty-minus">−</button>
-            <span class="qty">1</span>
-            <button type="button" class="qty-plus">+</button>
-          </div>
-          <button class="tier-btn" type="button">Add to order</button>
-        </div>
-      </div>
-
-      <div class="ticket-summary">
-        <div>
-          <p class="ref">Order reference <b id="refCode">—</b></p>
-          <div class="momo-steps" id="momoSteps">
-            Select a tier above to generate your reference code, then:<br>
-            <b>1.</b> Send payment via MTN MoMo to <b>+256 706 612 367</b> (Ghouse Records)<br>
-            <b>2.</b> Use your reference code as the payment comment<br>
-            <b>3.</b> Confirm on WhatsApp — we'll text your e-ticket back
+        <div class="footer-col">
+          <h4>Precious Metals Compliance</h4>
+          <p style="font-size:12px; color:var(--text-muted); line-height:1.6; margin-bottom:14px;">
+            All transactions undergo strict AML/CFT screening and OECD responsible mineral supply chains due diligence. Gold weights verified on Class I certified analytical balances.
+          </p>
+          <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-light); padding:10px; border-radius:var(--radius-sm); font-size:11px; color:var(--gold-300);">
+            ✓ 99.99% Fine Assay Guaranteed<br>
+            ✓ Licensed Precious Metals Trader
           </div>
         </div>
-        <a id="ticketWA" class="btn btn-solid" href="#" target="_blank" rel="noopener">Confirm on WhatsApp →</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> T.J Concepts. All rights reserved. Dealing in Fine Gold, Refining &amp; Mining Operations.</p>
+        <p style="font-size:12px; color:var(--text-dim);">Designed with high-precision luxury standards.</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- GALLERY -->
-  <section class="section" id="gallery">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">In the room</p>
-        <h2>Gallery</h2>
+  <!-- ================= FLOATING WHATSAPP CHAT BUTTON ================= -->
+  <div class="floating-wa-btn" id="floating-wa-btn" onclick="toggleWhatsAppChatPopup()" title="Chat with T.J Concepts on WhatsApp">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <div class="wa-badge-count">1</div>
+  </div>
+
+  <!-- ================= FLOATING WHATSAPP CHAT POPUP WIDGET ================= -->
+  <div class="wa-chat-popup" id="wa-chat-popup">
+    <div class="wa-chat-head">
+      <div class="wa-chat-agent">
+        <div class="wa-agent-avatar">TJ</div>
+        <div class="wa-agent-info">
+          <h4>T.J Concepts Gold Desk</h4>
+          <span>Online • Typically replies instantly</span>
+        </div>
       </div>
-      <div class="gallery">
-        <a href="https://www.instagram.com/ghouserecordsug" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&q=80" alt="Producer at the mixing desk"></a>
-        <a href="https://www.instagram.com/ghouserecordsug" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=700&q=80" alt="Crowd wearing silent disco headphones"></a>
-        <a href="https://www.instagram.com/ghouserecordsug" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1571266028243-e4bb35c0b13a?w=700&q=80" alt="Studio microphone in the booth"></a>
-        <a href="https://www.instagram.com/ghouserecordsug" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=700&q=80" alt="DJ set at Ghouse Records"></a>
+      <button class="wa-chat-close" onclick="toggleWhatsAppChatPopup()">✕</button>
+    </div>
+
+    <div class="wa-chat-body">
+      <div class="wa-bubble-incoming">
+        👋 Welcome to <strong>T.J Concepts</strong>! How can we assist you with our gold trading, refining, or mining operations today?
+      </div>
+
+      <div class="wa-quick-options">
+        <div class="wa-quick-opt" onclick="sendQuickWhatsApp('I want to Buy Gold Bullion / Bars')">
+          <span>👑 Buy Investment Gold Bullion</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+        <div class="wa-quick-opt" onclick="sendQuickWhatsApp('I want to Sell Gold Scrap / Dore Bars')">
+          <span>💰 Sell Gold Scrap or Dore</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+        <div class="wa-quick-opt" onclick="sendQuickWhatsApp('I want a quote for Gold Refining & Assaying')">
+          <span>🔥 Request Refining &amp; Smelting</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+        <div class="wa-quick-opt" onclick="sendQuickWhatsApp('I want to discuss Gold Mining Concessions & Sourcing')">
+          <span>⛏️ Mining Concession Inquiry</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
       </div>
     </div>
-  </section>
 
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>GHOUSE<br>RECORDS</h3>
-        <p>Recording studio and label in Kiwatule, Kampala — with a silent disco night once a month.</p>
+    <div class="wa-chat-foot">
+      <div class="wa-custom-input-wrap">
+        <input type="text" id="wa-quick-msg" class="wa-msg-input" placeholder="Type custom message..." onkeypress="if(event.key==='Enter') sendCustomPopupWhatsApp()">
+        <button class="wa-send-btn" onclick="sendCustomPopupWhatsApp()" title="Send to WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
       </div>
-      <div class="foot-col">
-        <span class="k">Visit</span>
-        <span>Kiwatule, Kampala, Uganda</span>
-        <span class="k" style="margin-top:10px;">Contact</span>
-        <a href="https://wa.me/256706612367" target="_blank" rel="noopener">WhatsApp: +256 706 612 367</a>
-        <a href="mailto:booking@ghouserecords.ug">booking@ghouserecords.ug</a>
-      </div>
-      <div class="foot-col">
-        <span class="k">Follow</span>
-        <a href="https://www.instagram.com/ghouserecordsug" target="_blank" rel="noopener">Instagram — @ghouserecordsug</a>
-        <span class="k" style="margin-top:10px;">On this site</span>
-        <a href="#booking">Studio bookings</a>
-        <a href="#disco">Silent disco nights</a>
-        <a href="#tickets">Tickets</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Ghouse Records, Kiwatule.</span>
-      <span>Built for the studio, run from the floor.</span>
     </div>
   </div>
-</footer>
 
-<script>
-  // build equalizer bars
-  const eq = document.getElementById('eq');
-  const barCount = 40;
-  for(let i=0;i<barCount;i++){
-    const bar = document.createElement('i');
-    const h = 20 + Math.random()*70;
-    bar.style.setProperty('--h', h+'%');
-    bar.style.animationDelay = (Math.random()*1.8)+'s';
-    bar.style.animationDuration = (1.3 + Math.random()*1.2)+'s';
-    eq.appendChild(bar);
-  }
+  <!-- ================= WHATSAPP SETTINGS CONFIG MODAL ================= -->
+  <div class="modal-overlay" id="settings-modal" onclick="closeSettingsModalOnOverlay(event)">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeSettingsModal()">✕</button>
+      <h3 style="font-size:22px; color:#fff; margin-bottom:8px;">⚙️ Configure WhatsApp Number</h3>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">
+        You can set your business WhatsApp number here. All orders, calculations, and inquiry buttons across the entire website will automatically link to this number!
+      </p>
 
-  // marquee content
-  const words = ['RECORDING STUDIO','MIXING & MASTERING','BOOK A SESSION','KIWATULE','GHOUSE RECORDS','SILENT DISCO — ONCE A MONTH'];
-  const track = document.getElementById('marqueeTrack');
-  let mHTML = '';
-  for(let r=0;r<2;r++){
-    words.forEach((w,i)=>{ mHTML += `<span class="${i%3===0?'hi':''}">${w}</span>`; });
-  }
-  track.innerHTML = mHTML;
+      <div class="form-group">
+        <label class="form-label">Business WhatsApp Phone (with Country Code)</label>
+        <input type="text" class="custom-input" id="config-phone-input" placeholder="e.g. 256700123456 (no '+' or spaces needed)">
+        <small style="color:var(--text-dim); font-size:11px; display:block; margin-top:4px;">
+          Example for Uganda: <code>256700000000</code> | International: <code>1234567890</code>
+        </small>
+      </div>
 
-  const WHATSAPP_NUMBER = "256706612367";
+      <div class="form-group">
+        <label class="form-label">Default Business Rep Name</label>
+        <input type="text" class="custom-input" id="config-rep-input" placeholder="T.J Concepts Chief Bullion Officer">
+      </div>
 
-  // theme toggle
-  const themeToggle = document.getElementById('themeToggle');
-  themeToggle.addEventListener('click', ()=>{
-    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-    document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');
-  });
+      <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:24px;">
+        <button onclick="closeSettingsModal()" class="btn btn-outline-gold">Cancel</button>
+        <button onclick="saveWhatsAppConfig()" class="btn btn-gold">Save &amp; Apply</button>
+      </div>
+    </div>
+  </div>
 
-  // RSVP -> whatsapp
-  document.querySelectorAll('.rsvp').forEach(link=>{
-    link.addEventListener('click', e=>{
-      e.preventDefault();
-      const evt = link.dataset.event;
-      const msg = encodeURIComponent(`Hi Ghouse Records! I'd like to RSVP for: ${evt}. Please send payment details.`);
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
+  <!-- ================= GENERAL QUICK ORDER MODAL ================= -->
+  <div class="modal-overlay" id="quick-order-modal" onclick="closeQuickModalOnOverlay(event)">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeQuickOrderModal()">✕</button>
+      <h3 style="font-size:22px; color:#fff; margin-bottom:8px;" id="modal-order-title">Instant Gold Order</h3>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;" id="modal-order-desc">Send your inquiry directly to our WhatsApp dispatch desk.</p>
+
+      <form onsubmit="handleQuickModalSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Client Name</label>
+          <input type="text" class="custom-input" id="qm-name" placeholder="Your Name or Company" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Order Details / Quantity</label>
+          <input type="text" class="custom-input" id="qm-details" placeholder="e.g. 250 grams of 24K Gold Bar" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Location / Country</label>
+          <input type="text" class="custom-input" id="qm-location" placeholder="e.g. Kampala, Uganda">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Instructions</label>
+          <textarea class="custom-textarea" id="qm-notes" rows="2" placeholder="Assaying requirements, delivery preferences, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-wa" style="width:100%; padding:13px; font-size:15px; margin-top:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          Open in WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= EMBEDDED JAVASCRIPT LOGIC ================= -->
+  <script>
+    /* ==========================================================================
+       T.J CONCEPTS - JAVASCRIPT APPLICATION CORE
+       ========================================================================== */
+
+    // Global Business WhatsApp configuration
+    let defaultPhone = "256700000000"; // Default phone (Uganda format standard or editable)
+    let businessPhone = localStorage.getItem("tj_whatsapp_phone") || defaultPhone;
+    let businessRep = localStorage.getItem("tj_whatsapp_rep") || "T.J Concepts Gold Desk";
+
+    // Gold Live Base Rates Constants (in USD per gram fine 24k)
+    const BASE_SPOT_OZ = 2465.80; // Spot price per Troy Oz
+    const GRAMS_PER_OZ = 31.1034768;
+    const BASE_24K_GRAM = BASE_SPOT_OZ / GRAMS_PER_OZ; // ~79.277 USD/g
+
+    // Currency Multipliers relative to USD
+    const CURRENCY_RATES = {
+      USD: { symbol: "$", rate: 1.0, decimals: 2 },
+      UGX: { symbol: "USh ", rate: 3750.0, decimals: 0 },
+      EUR: { symbol: "€", rate: 0.92, decimals: 2 },
+      AED: { symbol: "AED ", rate: 3.67, decimals: 2 },
+      GBP: { symbol: "£", rate: 0.79, decimals: 2 }
+    };
+
+    // Karat Purity Multipliers
+    const KARAT_PURITY = {
+      "24": 0.9999,
+      "22": 0.9167,
+      "21": 0.8750,
+      "18": 0.7500,
+      "14": 0.5833,
+      "10": 0.4167,
+      "raw": 0.8500
+    };
+
+    let currentCalcMode = "buy"; // 'buy', 'sell', 'refine'
+    let currentOrderTab = "buy";
+
+    // Initialize on DOM load
+    document.addEventListener("DOMContentLoaded", () => {
+      updateUIPhoneDisplays();
+      recalculateGold();
+      updateMessagePreview();
+
+      // Set year
+      const yearEl = document.getElementById("current-year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById("mobile-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      if (mobileBtn && navMenu) {
+        mobileBtn.addEventListener("click", () => {
+          navMenu.classList.toggle("mobile-open");
+        });
+      }
+
+      // Header Scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("main-header");
+        if (header) {
+          if (window.scrollY > 40) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        }
+      });
     });
-  });
 
-  // booking form -> whatsapp
-  document.getElementById('bookingForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const name = document.getElementById('b-name').value;
-    const phone = document.getElementById('b-phone').value;
-    const date = document.getElementById('b-date').value;
-    const time = document.getElementById('b-time').value;
-    const pkg = document.getElementById('b-package').value;
-    const artists = document.getElementById('b-artists').value;
-    const notes = document.getElementById('b-notes').value;
-    const msg = encodeURIComponent(
-      `Hi Ghouse Records! I'd like to book a session.\n`+
-      `Name: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\n`+
-      `Session: ${pkg}\nArtists: ${artists}\n`+
-      (notes ? `Notes: ${notes}\n` : '')
-    );
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
-  });
+    // Helper: update phone display badges
+    function updateUIPhoneDisplays() {
+      const cleanPhone = businessPhone.replace(/\D/g, "");
+      const formatted = cleanPhone.startsWith("256") 
+        ? "+256 " + cleanPhone.slice(3, 6) + " " + cleanPhone.slice(6, 9) + " " + cleanPhone.slice(9)
+        : "+" + cleanPhone;
 
-  // ticketing
-  document.querySelectorAll('.tier').forEach(tier=>{
-    const minus = tier.querySelector('.qty-minus');
-    const plus = tier.querySelector('.qty-plus');
-    const qtyEl = tier.querySelector('.qty');
-    let qty = 1;
-    minus.addEventListener('click', ()=>{ qty = Math.max(1, qty-1); qtyEl.textContent = qty; });
-    plus.addEventListener('click', ()=>{ qty = Math.min(10, qty+1); qtyEl.textContent = qty; });
+      const badge = document.getElementById("wa-number-badge");
+      if (badge) badge.textContent = formatted;
 
-    tier.querySelector('.tier-btn').addEventListener('click', ()=>{
-      const tierName = tier.dataset.tier;
-      const price = parseInt(tier.dataset.price,10);
-      const total = price*qty;
-      const ref = 'GHR-' + Math.random().toString(36).slice(2,7).toUpperCase();
+      const displayLink = document.getElementById("wa-display-link");
+      if (displayLink) displayLink.textContent = formatted + " (Click to Chat)";
 
-      document.getElementById('refCode').textContent = ref;
-      document.getElementById('momoSteps').innerHTML =
-        `<b>${qty}× ${tierName}</b> — total <b>UGX ${total.toLocaleString()}</b><br>`+
-        `<b>1.</b> Send UGX ${total.toLocaleString()} via MTN MoMo to <b>+256 706 612 367</b> (Ghouse Records)<br>`+
-        `<b>2.</b> Use <b>${ref}</b> as the payment comment<br>`+
-        `<b>3.</b> Tap "Confirm on WhatsApp" below — we'll text your e-ticket back`;
+      const targetTag = document.getElementById("target-phone-tag");
+      if (targetTag) targetTag.textContent = "Sending to: " + formatted;
+    }
 
-      const msg = encodeURIComponent(
-        `Hi Ghouse Records! I'd like to confirm a ticket order.\n`+
-        `Tier: ${tierName}\nQty: ${qty}\nTotal: UGX ${total.toLocaleString()}\nReference: ${ref}\n`+
-        `I've sent payment via MTN MoMo — please confirm and send my e-ticket.`
-      );
-      document.getElementById('ticketWA').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
-      document.querySelector('.ticket-summary').scrollIntoView({behavior:'smooth', block:'center'});
-    });
-  });
-</script>
+    // WhatsApp URL Generator
+    function generateWhatsAppUrl(phone, text) {
+      const cleanNumber = phone.replace(/\D/g, "");
+      const encoded = encodeURIComponent(text);
+      return `https://wa.me/${cleanNumber}?text=${encoded}`;
+    }
 
+    function openWhatsAppLink(text) {
+      const url = generateWhatsAppUrl(businessPhone, text);
+      window.open(url, "_blank");
+    }
+
+    /* ================= LIVE CALCULATOR LOGIC ================= */
+    function setCalcMode(mode, element) {
+      currentCalcMode = mode;
+      const opts = document.querySelectorAll("#calc-mode-group .pill-opt");
+      opts.forEach(opt => opt.classList.remove("active"));
+      if (element) element.classList.add("active");
+      recalculateGold();
+    }
+
+    function recalculateGold() {
+      const karatVal = document.getElementById("calc-karat").value;
+      const weightInput = parseFloat(document.getElementById("calc-weight").value) || 0;
+      const unitVal = document.getElementById("calc-unit").value;
+      const currencyVal = document.getElementById("calc-currency").value;
+
+      // Convert unit to grams
+      let weightInGrams = weightInput;
+      if (unitVal === "oz") weightInGrams = weightInput * GRAMS_PER_OZ;
+      else if (unitVal === "kg") weightInGrams = weightInput * 1000;
+      else if (unitVal === "tola") weightInGrams = weightInput * 11.6638;
+
+      const purityRatio = KARAT_PURITY[karatVal] || 0.9999;
+      const pureGrams = weightInGrams * purityRatio;
+
+      // Base gram value in USD
+      let ratePerGram = BASE_24K_GRAM * purityRatio;
+
+      let modeTitle = "Buy Gold Bullion";
+      let multiplier = 1.0;
+
+      if (currentCalcMode === "buy") {
+        modeTitle = "Buy Gold Bullion";
+        multiplier = 1.00; // standard benchmark
+      } else if (currentCalcMode === "sell") {
+        modeTitle = "Sell Gold / Scrap";
+        multiplier = 0.985; // slight buyback spread
+      } else if (currentCalcMode === "refine") {
+        modeTitle = "Refining & Assaying Service";
+        // Refining fee ~ 2% of metal value + small fixed batch fee
+        multiplier = 0.025;
+      }
+
+      let totalUSD = 0;
+      if (currentCalcMode === "refine") {
+        totalUSD = (weightInGrams * BASE_24K_GRAM * 0.02) + 40; // minimum batch charge
+      } else {
+        totalUSD = ratePerGram * weightInGrams * multiplier;
+      }
+
+      // Convert to selected currency
+      const curr = CURRENCY_RATES[currencyVal] || CURRENCY_RATES.USD;
+      const convertedTotal = totalUSD * curr.rate;
+      const convertedPerGram = (ratePerGram * curr.rate);
+
+      // Update Breakdown DOM
+      const opEl = document.getElementById("breakdown-op");
+      if (opEl) opEl.textContent = modeTitle;
+
+      const weightEl = document.getElementById("breakdown-weight");
+      if (weightEl) weightEl.textContent = `${weightInGrams.toFixed(2)} Grams (${weightInput} ${unitVal})`;
+
+      const pureEl = document.getElementById("breakdown-pure");
+      if (pureEl) pureEl.textContent = `${pureGrams.toFixed(2)} g Fine Gold (${(purityRatio * 100).toFixed(1)}%)`;
+
+      const rateEl = document.getElementById("breakdown-rate");
+      if (rateEl) {
+        if (currentCalcMode === "refine") {
+          rateEl.textContent = "Estimated Refining Processing Fee";
+        } else {
+          rateEl.textContent = `${curr.symbol}${convertedPerGram.toLocaleString(undefined, {minimumFractionDigits: curr.decimals, maximumFractionDigits: curr.decimals})} / g`;
+        }
+      }
+
+      const totalValEl = document.getElementById("calc-total-val");
+      if (totalValEl) {
+        totalValEl.textContent = `${curr.symbol}${convertedTotal.toLocaleString(undefined, {minimumFractionDigits: curr.decimals, maximumFractionDigits: curr.decimals})}`;
+      }
+    }
+
+    function sendCalculatedOrderWhatsApp() {
+      const karatSelect = document.getElementById("calc-karat");
+      const karatText = karatSelect.options[karatSelect.selectedIndex].text;
+      const weightInput = document.getElementById("calc-weight").value;
+      const unitVal = document.getElementById("calc-unit").value;
+      const currencyVal = document.getElementById("calc-currency").value;
+      const totalFormatted = document.getElementById("calc-total-val").textContent;
+      const modeText = currentCalcMode.toUpperCase();
+
+      const message = 
+`👑 *T.J CONCEPTS - GOLD VALUATION & ORDER* 👑
+-------------------------------------------
+📌 *Mode:* ${modeText} GOLD
+⚖️ *Weight:* ${weightInput} ${unitVal.toUpperCase()}
+✨ *Purity Grade:* ${karatText}
+💰 *Estimated Valuation:* ${totalFormatted} (${currencyVal})
+-------------------------------------------
+Hello T.J Concepts Desk, I would like to proceed with this order/inquiry. Please confirm current market spot and arrange next steps.`;
+
+      openWhatsAppLink(message);
+    }
+
+    function quickTradeKarat(karat, mode, rate) {
+      const msg = 
+`👑 *T.J CONCEPTS - LIVE SPOT ORDER* 👑
+-------------------------------------------
+📌 *Action:* ${mode.toUpperCase()} ${karat} GOLD
+📊 *Spot Rate:* $${rate.toFixed(2)} / gram
+-------------------------------------------
+Hello T.J Concepts Desk, I would like to trade ${karat} gold at the indicated spot rate. Please advise on available batch sizes and settlement options.`;
+
+      openWhatsAppLink(msg);
+    }
+
+    /* ================= ORDER BUILDER & TAB LOGIC ================= */
+    function setOrderTab(tab, element) {
+      currentOrderTab = tab;
+      const tabs = document.querySelectorAll(".order-tabs .order-tab");
+      tabs.forEach(t => t.classList.remove("active"));
+      if (element) element.classList.add("active");
+
+      // Auto adjust fields based on tab
+      const productSelect = document.getElementById("ob-product");
+      const karatSelect = document.getElementById("ob-karat");
+      const weightInput = document.getElementById("ob-weight");
+
+      if (tab === "buy") {
+        productSelect.value = "100g Minted Gold Bar";
+        karatSelect.value = "24K (99.99% Pure)";
+        weightInput.value = "100 Grams";
+      } else if (tab === "sell") {
+        productSelect.value = "Gold Scrap / Jewelry Recycling";
+        karatSelect.value = "Mixed Scrap (To be assayed)";
+        weightInput.value = "250 Grams";
+      } else if (tab === "refining") {
+        productSelect.value = "Full Batch Induction Refining";
+        karatSelect.value = "Raw / Unrefined Ore";
+        weightInput.value = "1000 Grams (1kg)";
+      } else if (tab === "mining") {
+        productSelect.value = "Mining Concession Partnership";
+        karatSelect.value = "Raw Unrefined Dore Bars";
+        weightInput.value = "5 Kilograms+";
+      }
+
+      updateMessagePreview();
+    }
+
+    function scrollToOrderSection(tab) {
+      const target = document.getElementById("order-builder");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+        const tabBtns = document.querySelectorAll(".order-tabs .order-tab");
+        if (tab === "buy" && tabBtns[0]) setOrderTab('buy', tabBtns[0]);
+        else if (tab === "sell" && tabBtns[1]) setOrderTab('sell', tabBtns[1]);
+        else if (tab === "refining" && tabBtns[2]) setOrderTab('refining', tabBtns[2]);
+        else if (tab === "mining" && tabBtns[3]) setOrderTab('mining', tabBtns[3]);
+      }
+    }
+
+    function updateMessagePreview() {
+      const product = document.getElementById("ob-product") ? document.getElementById("ob-product").value : "Investment Gold Bar";
+      const weight = document.getElementById("ob-weight") ? document.getElementById("ob-weight").value : "100g";
+      const karat = document.getElementById("ob-karat") ? document.getElementById("ob-karat").value : "24K (99.99%)";
+      const name = document.getElementById("ob-name") && document.getElementById("ob-name").value.trim() ? document.getElementById("ob-name").value.trim() : "Valued Client";
+      const location = document.getElementById("ob-location") && document.getElementById("ob-location").value.trim() ? document.getElementById("ob-location").value.trim() : "Kampala, Uganda";
+      const settlement = document.getElementById("ob-settlement") ? document.getElementById("ob-settlement").value : "Direct Physical Pick-up";
+      const notes = document.getElementById("ob-notes") && document.getElementById("ob-notes").value.trim() ? document.getElementById("ob-notes").value.trim() : "Ready for immediate transaction.";
+
+      let serviceLabel = "Buy Gold Bullion";
+      if (currentOrderTab === "sell") serviceLabel = "Sell Gold / Scrap";
+      else if (currentOrderTab === "refining") serviceLabel = "Gold Refining & Smelting";
+      else if (currentOrderTab === "mining") serviceLabel = "Mining Concession Sourcing";
+
+      const text = 
+`👑 *T.J CONCEPTS - PRECIOUS METALS DISPATCH* 👑
+-------------------------------------------
+📌 *Service Category:* ${serviceLabel}
+📦 *Product/Batch:* ${product}
+⚖️ *Quantity / Weight:* ${weight}
+✨ *Purity / Karat:* ${karat}
+👤 *Client Name:* ${name}
+📍 *Location:* ${location}
+💼 *Settlement / Delivery:* ${settlement}
+📝 *Special Notes:* ${notes}
+-------------------------------------------
+_Sent via TJ Concepts Online Portal_`;
+
+      const previewEl = document.getElementById("ob-preview-text");
+      if (previewEl) previewEl.textContent = text;
+
+      return text;
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const message = updateMessagePreview();
+      openWhatsAppLink(message);
+    }
+
+    function resetOrderForm() {
+      document.getElementById("order-builder-form").reset();
+      updateMessagePreview();
+    }
+
+    /* ================= CATALOG FILTER & ORDER ================= */
+    function filterCatalog(category, button) {
+      const btns = document.querySelectorAll(".filter-bar .filter-btn");
+      btns.forEach(b => b.classList.remove("active"));
+      if (button) button.classList.add("active");
+
+      const items = document.querySelectorAll("#catalog-items-grid .product-card");
+      items.forEach(item => {
+        const itemCat = item.getAttribute("data-cat");
+        if (category === "all" || itemCat === category) {
+          item.style.display = "flex";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    function orderProductWhatsApp(title, weight, purity) {
+      const msg = 
+`👑 *T.J CONCEPTS - CATALOG INQUIRY* 👑
+-------------------------------------------
+📦 *Selected Item:* ${title}
+⚖️ *Weight:* ${weight}
+✨ *Purity Standard:* ${purity}
+-------------------------------------------
+Hello T.J Concepts Desk, I am interested in acquiring/booking this item. Please inform me of the current spot quotation and availability for immediate execution.`;
+
+      openWhatsAppLink(msg);
+    }
+
+    /* ================= FLOATING POPUP WIDGET LOGIC ================= */
+    function toggleWhatsAppChatPopup() {
+      const popup = document.getElementById("wa-chat-popup");
+      if (popup) {
+        popup.classList.toggle("active");
+      }
+    }
+
+    function sendQuickWhatsApp(promptText) {
+      const msg = 
+`👑 *T.J CONCEPTS - QUICK INQUIRY* 👑
+-------------------------------------------
+💬 *Topic:* ${promptText}
+-------------------------------------------
+Hello T.J Concepts, I would like more information on your gold services regarding this topic.`;
+
+      openWhatsAppLink(msg);
+      toggleWhatsAppChatPopup();
+    }
+
+    function sendCustomPopupWhatsApp() {
+      const input = document.getElementById("wa-quick-msg");
+      if (input && input.value.trim()) {
+        const customText = input.value.trim();
+        const msg = 
+`👑 *T.J CONCEPTS - DIRECT MESSAGE* 👑
+-------------------------------------------
+${customText}
+-------------------------------------------
+_Sent from T.J Concepts Live Web Widget_`;
+
+        openWhatsAppLink(msg);
+        input.value = "";
+        toggleWhatsAppChatPopup();
+      }
+    }
+
+    /* ================= MODAL LOGIC ================= */
+    function openWhatsAppModal(serviceName) {
+      const modal = document.getElementById("quick-order-modal");
+      const title = document.getElementById("modal-order-title");
+      const details = document.getElementById("qm-details");
+      if (title) title.textContent = serviceName || "Gold Inquiry Desk";
+      if (details) details.value = serviceName || "Gold Buying / Refining Inquiry";
+      if (modal) modal.classList.add("active");
+    }
+
+    function closeQuickOrderModal() {
+      const modal = document.getElementById("quick-order-modal");
+      if (modal) modal.classList.remove("active");
+    }
+
+    function closeQuickModalOnOverlay(e) {
+      if (e.target.id === "quick-order-modal") closeQuickOrderModal();
+    }
+
+    function handleQuickModalSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById("qm-name").value;
+      const details = document.getElementById("qm-details").value;
+      const location = document.getElementById("qm-location").value;
+      const notes = document.getElementById("qm-notes").value;
+
+      const msg = 
+`👑 *T.J CONCEPTS - DIRECT ORDER REQUEST* 👑
+-------------------------------------------
+👤 *Client:* ${name}
+📦 *Requirement:* ${details}
+📍 *Location:* ${location || "Not specified"}
+📝 *Notes:* ${notes || "Standard inquiry"}
+-------------------------------------------
+Hello, please provide quotation and execution terms.`;
+
+      openWhatsAppLink(msg);
+      closeQuickOrderModal();
+    }
+
+    // Contact Form Handler
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById("cf-name").value;
+      const phone = document.getElementById("cf-phone").value;
+      const service = document.getElementById("cf-service").value;
+      const msgText = document.getElementById("cf-msg").value;
+
+      const msg = 
+`👑 *T.J CONCEPTS - APPOINTMENT & INQUIRY* 👑
+-------------------------------------------
+👤 *Name:* ${name}
+📞 *Contact Phone:* ${phone}
+🎯 *Service:* ${service}
+📝 *Message:* ${msgText}
+-------------------------------------------
+_Sent from TJ Concepts VIP Contact Form_`;
+
+      openWhatsAppLink(msg);
+    }
+
+    // Settings Modal
+    function openSettingsModal() {
+      const modal = document.getElementById("settings-modal");
+      const phoneInput = document.getElementById("config-phone-input");
+      const repInput = document.getElementById("config-rep-input");
+      if (phoneInput) phoneInput.value = businessPhone;
+      if (repInput) repInput.value = businessRep;
+      if (modal) modal.classList.add("active");
+    }
+
+    function closeSettingsModal() {
+      const modal = document.getElementById("settings-modal");
+      if (modal) modal.classList.remove("active");
+    }
+
+    function closeSettingsModalOnOverlay(e) {
+      if (e.target.id === "settings-modal") closeSettingsModal();
+    }
+
+    function saveWhatsAppConfig() {
+      const phoneInput = document.getElementById("config-phone-input").value.trim();
+      const repInput = document.getElementById("config-rep-input").value.trim();
+
+      if (phoneInput) {
+        businessPhone = phoneInput.replace(/\D/g, "");
+        localStorage.setItem("tj_whatsapp_phone", businessPhone);
+      }
+      if (repInput) {
+        businessRep = repInput;
+        localStorage.setItem("tj_whatsapp_rep", businessRep);
+      }
+
+      updateUIPhoneDisplays();
+      updateMessagePreview();
+      closeSettingsModal();
+      alert("✓ WhatsApp Configuration Updated Successfully! All website order buttons will now transmit to: +" + businessPhone);
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(item) {
+      item.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
